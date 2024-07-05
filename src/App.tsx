@@ -1,13 +1,14 @@
-import styles from "./App.module.scss";
+import { Button } from "stories/Button";
+import ContainerIntroduction from "components/ContainerIntroduction";
 
-function App() {
+const App: React.FC = () => {
+    
   return (
     <>
-    <div className={styles.container}>
-      <h1>Hello World!</h1>
-    </div>
+
+    <ContainerIntroduction/>
     </>
   );
-}
+};
 
 export default App;
