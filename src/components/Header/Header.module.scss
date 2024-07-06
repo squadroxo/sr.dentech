@@ -1,0 +1,43 @@
+@import "../../styles/variaveis.scss";
+
+.container{
+  background-color: $corPrimaria;
+  width: 100%;
+  height: 115px;
+  border-radius: 0 0 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .containerTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__txt{
+      font-family: $fontDestaque;
+      font-size: 28px;
+      color: $branco100;
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+  }
+
+  .containerLinks{
+
+    &__lista{
+      display: flex;
+      gap: 72px;
+      
+      &__item{
+        font-family: $fontDestaque;
+        color: $branco100;
+        font-weight: 700;
+        line-height: 31.88px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+}
