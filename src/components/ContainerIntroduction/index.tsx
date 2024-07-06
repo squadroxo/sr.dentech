@@ -4,7 +4,7 @@ import ilustracaoHome from "../../assets/ilustracaoHome1.png";
 
 const ContainerIntroduction: React.FC = () => {
     const handleClick = () => {
-        // Lógica do clique
+        // Vamos deixar essa funcao aqui ate termos a tela saiba mais
         console.log('Botão clicado!');
       };
     
@@ -16,7 +16,13 @@ const ContainerIntroduction: React.FC = () => {
                     <p><span>Aprenda mais sobre saúde bucal com o Sr. Dente! </span> <br></br>
                 Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal</p>
                 </div>
-                <ComponentButton  link='/ContainerIntroduction' onClick={handleClick} label="Saiba mais"/>  
+                <ComponentButton  
+                    link='/ContainerIntroduction' 
+                    onClick={handleClick} 
+                    label="Saiba mais"
+                    className={style.btSaibaMais}
+                    labelClassName={style.labelSaibaMais}
+                    />  
             </div>
             <div className={style.container2}>
                 <img src={ilustracaoHome} alt='criancas escovando dente'/>
