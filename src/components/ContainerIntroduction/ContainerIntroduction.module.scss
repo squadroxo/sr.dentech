@@ -1,14 +1,14 @@
 @import "../../styles/variaveis.scss";
+
 .containerIntroduction{
     display: flex;
     flex-direction: row;
-    margin-left: 320px;
+    margin:0 320px 0 320px;
+    
 }
 .container1{
     display: flex;
     flex-direction: column;
- 
-    
 }
 .containerTexto{
     display: flex;
@@ -38,15 +38,33 @@
     font-weight: 700;
 }
 
-.container2{
-    
-}
 .container2 img{
     width: 739px;
     height: 444px;
     top: 170px;
     left: 862px;
+    margin-top: 55px;
+ 
+}
+.btSaibaMais{
+    width:335px;
+    height: 50px;
+    top: 426px;
+    left: 345px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: $corTerciaria;
+}
+.labelSaibaMais{
+    font-family: $fontDestaque;
+    font-size: 20px;
+    font-weight: 700;
+    width: 97px;
+    height: 32px;
+    color: $branco100;
+    background-color: $corTerciaria;
 
-
-    
 }
