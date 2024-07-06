@@ -22,7 +22,8 @@ const ContainerIntroduction: React.FC = () => {
                     label="Saiba mais"
                     className={style.btSaibaMais}
                     labelClassName={style.labelSaibaMais}
-                    />  
+                    primario={true}
+                />  
             </div>
             <div className={style.container2}>
                 <img src={ilustracaoHome} alt='criancas escovando dente'/>
