@@ -1,4 +1,4 @@
-@import "../../styles/variaveis.scss";
+@use "styles/variables" as *;
 
 .container{
   background-color: $corPrimaria;
@@ -29,7 +29,6 @@
     &__lista{
       display: flex;
       gap: 72px;
-      
       &__item{
         font-family: $fontDestaque;
         color: $branco100;

@@ -1,4 +1,4 @@
-@import "../../styles/variaveis.scss";
+@use "styles/variables" as *;
 
 .container {
   background-color: $corPrimaria;
@@ -30,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.3rem;
 
       &__txt{
         color: $branco100;
