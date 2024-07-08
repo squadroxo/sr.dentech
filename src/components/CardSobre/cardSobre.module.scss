@@ -1,0 +1,91 @@
+@use "styles/variables" as *;
+
+.container {
+  width: 1280px;
+  height: 710px;
+  padding: 40px 10px;
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
+
+  &__foto{
+    width: 542px;
+    height: 577px;
+    border-radius: 30px;
+  }
+
+  &__containerInfos{
+
+    &__titulo{
+      color: $corSecundaria;
+      font-family: $fontDestaque;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    
+    &__subtitulo{
+      font-weight: 500;
+      font-size: 20px;
+      color: $corSecundaria;
+      margin-bottom: 20px;
+    }
+
+    &__descricao{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+
+      h5 {
+        font-family: $fontDestaque;
+        color: $corSecundaria;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 22px;
+      }
+
+      li {
+        list-style-type: disc;
+        list-style-position: inside;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__containerCardDesc{
+      background-color: $corTerciaria;
+      width: 634px;
+      height: 64px;
+      border-radius: 10px;
+      padding: 10px;
+
+      img {
+        margin: 2rem 1.3rem 2rem 1rem;
+      }
+
+      p {
+        font-family: $fontDestaque;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: $branco100;
+      }
+    }
+  }
+
+}
