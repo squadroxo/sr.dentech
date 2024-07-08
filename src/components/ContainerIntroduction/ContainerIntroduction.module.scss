@@ -1,4 +1,4 @@
-@import "../../styles/variaveis.scss";
+@use "styles/variables" as *;
 
 .containerIntroduction{
     display: flex;

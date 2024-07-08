@@ -1,3 +1,4 @@
+@use "styles/variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -21,7 +22,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	font-family: "Inter", sans-serif;;
+	font-family: $fontPrimaria;
 }
 
 article, aside, details, figcaption, figure, 
@@ -31,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	min-height: 100vh;
-	background-color: #F9F9F9;
+	background-color: $background;
 }
 ol, ul {
 	list-style: none;
