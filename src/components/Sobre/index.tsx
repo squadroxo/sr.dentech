@@ -18,6 +18,7 @@ export const Sobre = () => {
           infosDescritiva={item.infosDescritiva}
           alt={item.alt}
           cardDesc={item.cardDesc}
+          fotoSeparacao={item.fotoSeparacao}
         />
       )) }
     </div>

@@ -8,37 +8,41 @@
   gap: 42px;
   align-items: flex-start;
 
-  &__foto{
+  &__foto {
     width: 542px;
     height: 577px;
     border-radius: 30px;
   }
 
-  &__containerInfos{
-
-    &__titulo{
+  &__containerInfos {
+    &__titulo {
       color: $corSecundaria;
       font-family: $fontDestaque;
       font-size: 36px;
       font-weight: 700;
       margin-bottom: 8px;
     }
-    
-    &__subtitulo{
+
+    &__subtitulo {
       font-weight: 500;
       font-size: 20px;
       color: $corSecundaria;
       margin-bottom: 20px;
     }
 
-    &__descricao{
+    &__descricao {
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 20px;
+      max-width: 593px;
     }
 
-    div{
+    &__tracado {
+      margin: 20px 0;
+    }
+
+    div {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -66,7 +70,7 @@
       }
     }
 
-    &__containerCardDesc{
+    &__containerCardDesc {
       background-color: $corTerciaria;
       width: 634px;
       height: 64px;
@@ -88,4 +92,29 @@
     }
   }
 
+  &__containerItemDescritiva {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__item {
+      list-style-type: disc;
+      list-style-position: inside;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      
+      &__container{
+        display: flex;
+
+        p {
+          span {
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+
+    }
+  }
 }
