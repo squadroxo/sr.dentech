@@ -70,6 +70,7 @@
     font-size: 26px;
     line-height: 22px;
     color: $corPrimaria;
+    margin-bottom: 25px;
 }
 
 .objetivo .missao p, .visao p, .valores ul{
@@ -101,6 +102,7 @@
     line-height: 22px;
     text-align: left;
     color: $corPrimaria;
+    margin-bottom: 25px;
 }
 .equipeTexto{
     font-family: $fontPrimaria;
@@ -109,6 +111,7 @@
     line-height: 25px;
     text-align: left;
     color: $branco90;
+    
 }
 //confirmar tamanhos com designers
 .equipeContato{
@@ -135,6 +138,7 @@
     border-radius: 30px;
     border: none;
     background-color: $corPrimaria;
+    margin:40px 0 40px 0;
 }
 .labelEquipe{
     width: 114px;
