@@ -1,8 +1,8 @@
 type infosTextoProps = {
+  id: string,
   primTituloInfo: string,
   primItemInfo: string[]
 }
-
 
 type infosSecProps = {
   id: string,
@@ -10,6 +10,7 @@ type infosSecProps = {
   texto: string
 }
 type infosDescritivaProps = {
+  id: string,
   secTituloInfo: string,
   secItemInfo: infosSecProps[]
 }
@@ -18,12 +19,13 @@ type infosDescritivaProps = {
 export type dataCardSobreProps = {
   id: string,
   tituloCard: string,
-  subtituloCard: string,
+  subtituloCard?: string,
   descricaoCard: string,
-  infosTexto: infosTextoProps,
-  infosDescritiva?: infosDescritivaProps,
+  infosTexto?: infosTextoProps[],
+  infosDescritiva?: infosDescritivaProps[],
   foto: string,
-  cardDesc: string,
+  cardDesc?: string,
   alt: string,
   primario: boolean,
+  fotoSeparacao: string
 };
