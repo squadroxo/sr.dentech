@@ -341,7 +341,7 @@ const dataCards = [
 
     foto: "assets/crianca-5.png",
     alt: "Foto de uma criança escovand os dentes",
-    primario: true,
+    primario: false,
     fotoSeparacao: "assets/pontilhado.svg"
   },
 

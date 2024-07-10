@@ -1,0 +1,6 @@
+@use "styles/variables" as *;
+
+.container{
+  background-color: $corSecundaria;
+  border-radius: 30px 30px 0 0;
+}
