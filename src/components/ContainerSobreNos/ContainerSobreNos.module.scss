@@ -1,18 +1,22 @@
 @use "styles/variables.scss" as *;
 
 .wrapper{
+    margin: 0;
+    padding: 0;
     height: 1340px;
     top: 7676px;
     border-radius: 30px;
     background-color: $corSecundaria;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+   
 }
 .containerGeral{
     width: 1303px;
     height: 1112px;
     top: 7786px;
     left: 308px;
-    margin-left: 308.5px;//308.5 = (1920-1303)/2 medidas figma
     padding-top: 110px;
     
 }
