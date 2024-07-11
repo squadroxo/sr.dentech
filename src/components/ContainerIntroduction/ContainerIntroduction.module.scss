@@ -62,6 +62,11 @@
     margin-bottom: 276px;
     
 }
+.btSaibaMais:hover{
+    background-color: $corPrimaria;
+    width: 340px;
+    height: 55px;
+}
 .labelSaibaMais{
     font-family: $fontDestaque;
     font-size: 20px;
@@ -69,6 +74,6 @@
     width: 97px;
     height: 32px;
     color: $branco100;
-    background-color: $corTerciaria;
+    
 
 }
