@@ -7,15 +7,15 @@ import styles from "./app.module.scss"
 
 const App: React.FC = () => {
   return (
-    <>
+    <div className={styles.containerMain}>
       <Header />
       <ContainerIntroduction/>
       <Sobre />
-      <div className={styles.container}>
+      <div className={styles.containerFooter}>
         <ContainerSobreNos/>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
