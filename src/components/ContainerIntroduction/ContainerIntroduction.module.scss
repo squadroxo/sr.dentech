@@ -13,7 +13,7 @@
 .containerTexto{
     display: flex;
     flex-direction: column;
-    margin: 130px 0 40px 0;
+    margin-bottom: 40px;
 }
 .container1 h1{
     font-family: $fontDestaque;
@@ -24,6 +24,7 @@
     height: 59px;
     top: 245px;
     left: 345px;
+    margin-top: 130px;
     
 }
 .container1 p{
@@ -59,6 +60,7 @@
     cursor: pointer;
     background-color: $corTerciaria;
     margin-bottom: 276px;
+    
 }
 .labelSaibaMais{
     font-family: $fontDestaque;
