@@ -3,7 +3,7 @@
 .containerIntroduction{
     display: flex;
     flex-direction: row;
-    margin:0 320px 0 320px;
+    margin:0px 320px 0px 320px;
     
 }
 .container1{
@@ -24,6 +24,7 @@
     height: 59px;
     top: 245px;
     left: 345px;
+    
 }
 .container1 p{
     width: 505px;
@@ -57,6 +58,7 @@
     border: none;
     cursor: pointer;
     background-color: $corTerciaria;
+    margin-bottom: 276px;
 }
 .labelSaibaMais{
     font-family: $fontDestaque;
