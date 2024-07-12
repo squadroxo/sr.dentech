@@ -1,21 +1,20 @@
-import ContainerIntroduction from "components/ContainerIntroduction";
-import { Header } from "components/Header";
 import { Footer } from "components/Footer";
-import { Sobre } from "components/Sobre";
-import ContainerSobreNos from "components/ContainerSobreNos";
-import styles from "./app.module.scss"
+import { Header } from "components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/Home";
+import styles from "./app.module.scss";
 
 const App: React.FC = () => {
   return (
-    <div className={styles.containerMain}>
-      <Header />
-      <ContainerIntroduction/>
-      <Sobre />
-      <div className={styles.containerFooter}>
-        <ContainerSobreNos/>
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <div className={styles.containerFooter}>
+          <Footer />
+        </div>
+    </BrowserRouter>
   );
 };
 
