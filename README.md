@@ -22,7 +22,7 @@ _WEB_
 
 ![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_01.png)
 ![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_02.png)
-![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_01.png)
+![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_03.png)
 
 ---
 
