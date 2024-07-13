@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+<h1 align="center"> 💻 Lucas Baptista - Portfólio 🚀 </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-autor">Desenvolvedor</a> • 
+ <a href="#user-content--licença">Licença</a>
+</p>
 
-## Available Scripts
+## 🖥️ Sobre o projeto
 
-In the project directory, you can run:
+A página Sr.Dente é um projeto voluntário, desenvolvido para o Pipoca Ágil, o principal objetivo do projeto é educar e informar famílias sobre a importância da saúde bucal, oferecendo conteúdos acessíveis e didáticos para incentivar práticas de higiene dental e cuidados preventivos. O projeto guia a troca dos dentes de leite das crianças, aborda a saúde bucal nos adultos e reforça a importância da escovação, uso do fio dental e prevenção de cáries, sempre de maneira divertida e em Família.
 
-### `npm start`
+🌎 Deploy do projeto: [https://sr-dente.vercel.app/](https://sr-dente.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🖼️ Layout
 
-### `npm test`
+_WEB_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_01.png)
+![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_02.png)
+![GK1](https://github.com/luscabap/sr-dente/blob/main/public/web_03.png)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tecnologias 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As seguintes ferramentas foram usadas para desenvolver o projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Front End
+- REACT <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+- TYPESCRIPT <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
+- SASS <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"/>
+- NPM <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"/>
+ 
+          
+### Ambiente de Desenvolvimento
+- Visual Studio Code <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"/>
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 👨‍🎓 Desenvolvedores
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://www.linkedin.com/in/lucas-baptista-da-silva-133779233/">
+Lucas Baptista da Silva</a>
+<br>
+<a href="https://www.linkedin.com/in/daniela-dos-santos-alves/">
+Daniela Alves</a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
