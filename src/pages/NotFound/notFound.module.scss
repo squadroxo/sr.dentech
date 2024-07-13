@@ -18,16 +18,4 @@
   &__paragrafo{
     font-size: 22px;
   }
-
-  &__link{
-    text-decoration: none;
-    background-color: $corPrimaria;
-    color: white;
-    padding: 1rem;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
 }
