@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HomePage } from "./pages/Home";
 import styles from "./app.module.scss";
 import { NotFoundPage } from "./pages/NotFound";
-import { ConstrucaoPage } from "./pages/Construcao";
+import ConstrucaoPage from "./pages/Construcao";
 
 const App: React.FC = () => {
   return (
