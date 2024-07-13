@@ -1,13 +1,8 @@
 import styles from "./Header.module.scss";
-import logo from "../../assets/Group.svg"
+import logo from "../../assets/Group.svg";
+import { dataLinks } from "./data"
 
 export const Header = () => {
-  const linksNav = [
-    "Home",
-    "Saúde bucal familiar",
-    "Problemas bucais",
-    "Sobre"
-  ]
 
   return (
     <header className={styles.container}>
@@ -17,8 +12,8 @@ export const Header = () => {
       </div>
       <nav className={styles.containerLinks}>
         <ul className={styles.containerLinks__lista}>
-          { linksNav.map((link, i) => (
-            <li key={i}><a href="/" className={styles.containerLinks__lista__item}>{link}</a></li>
+          { dataLinks.map(link => (
+            <li key={link.id}><a href={link.href} className={styles.containerLinks__lista__item}>{link.texto}</a></li>
           )) }
         </ul>
       </nav>
