@@ -1,0 +1,21 @@
+@use "styles/variables" as *;
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 4rem 0;
+
+  &__titulo{
+    font-family: $fontDestaque;
+    color: $corSecundaria;
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  &__paragrafo{
+    font-size: 22px;
+  }
+}
