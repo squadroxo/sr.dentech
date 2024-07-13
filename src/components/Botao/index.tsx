@@ -1,11 +1,19 @@
 import { IoReturnUpBack } from "react-icons/io5";
 import styles from "./botao.module.scss"
+import { useNavigate } from "react-router";
 
-export const Botao = () => {
+export interface IBotaoProps {
+  href: string,
+  texto: string,
+  tamanhoIcone: number
+}
+
+export const Botao = ({ href, tamanhoIcone, texto }:IBotaoProps) => {
+  const navigate = useNavigate();
   return (
-    <a href="/" className={styles.container}>
-      <IoReturnUpBack size={30} />
-      Voltar a página inicial
-    </a>
+    <button onClick={() => navigate(href)} className={styles.container}>
+      <IoReturnUpBack size={tamanhoIcone} />
+      {texto}
+    </button>
   );
 };
