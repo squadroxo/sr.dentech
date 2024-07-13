@@ -37,13 +37,17 @@ function ContainerSobreNos() {
                 <div className={style.equipe}>
                         <h1 className={style.equipeTitulo}>Nossa Equipe:</h1>
                         <p className={style.equipeTexto}>Conheça os heróis por trás do Sr. Dente: uma equipe de tecnologia, design e gestão de produtos digitais, todos unidos para fazer a diferença e transformar vidas através de sorrisos saudáveis. </p>
-                        <ComponentButton
+                        <ComponentButton 
                             link='https://pipoca-agil-apresentacao.vercel.app'
-                            onClick={() => { console.log('Botão clicado!') }}
+                            onClick={() => { 
+                                console.log('Botão clicado!'); 
+                                window.open('https://pipoca-agil-apresentacao.vercel.app', '_blank'); 
+                            }}
                             label="Nossa Equipe"
                             className={style.btEquipe}
                             labelClassName={style.labelEquipe}
                             primario={true}
+                           
                         />
                         <p className={style.equipeContato}>Contato:<span> e-mailsrdente@e-mail.com</span></p>
                     </div>
