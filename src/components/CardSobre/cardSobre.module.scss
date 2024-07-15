@@ -38,21 +38,18 @@
       max-width: 593px;
     }
 
-    &__tracado {
-      margin: 20px 0;
-    }
 
-    div {
+    &__containerDivisoria{
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
 
-    ul {
+    &__containerLista {
       margin-bottom: 20px;
 
-      h5 {
+      .tituloLista {
         font-family: $fontDestaque;
         color: $corSecundaria;
         font-weight: 700;
@@ -61,7 +58,7 @@
         margin-bottom: 22px;
       }
 
-      li {
+      .itemLista {
         list-style-type: disc;
         list-style-position: inside;
         font-weight: 500;
@@ -76,12 +73,15 @@
       height: 64px;
       border-radius: 10px;
       padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      img {
+      &__imgCardDesc {
         margin: 2rem 1.3rem 2rem 1rem;
       }
 
-      p {
+      .textoCardDesc {
         font-family: $fontDestaque;
         font-weight: 700;
         font-size: 16px;
@@ -92,29 +92,29 @@
     }
   }
 
-  &__containerItemDescritiva {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    &__item {
-      list-style-type: disc;
-      list-style-position: inside;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 22px;
-      display: flex;
+//   &__containerItemDescritiva {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     &__item {
+//       list-style-type: disc;
+//       list-style-position: inside;
+//       font-weight: 500;
+//       font-size: 16px;
+//       line-height: 22px;
+//       display: flex;
       
-      &__container{
-        display: flex;
+//       &__container{
+//         display: flex;
 
-        p {
-          span {
-            font-weight: 700;
-            font-size: 16px;
-          }
-        }
-      }
+//         p {
+//           span {
+//             font-weight: 700;
+//             font-size: 16px;
+//           }
+//         }
+//       }
 
-    }
-  }
+//     }
+//   }
 }
