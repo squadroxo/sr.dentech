@@ -1,6 +1,7 @@
 import { dataCardSobreProps } from "@/types/dataCardsSobre";
 import styles from "./cardSobre.module.scss";
 import dente from "./assets/dente.svg";
+import { TextoDestaque } from "../TextoDestaque";
 
 type CardSobreProps = Omit<dataCardSobreProps, "id">;
 
@@ -10,11 +11,10 @@ export const CardSobre = ({
   alt,
   subtituloCard,
   descricaoCard,
-  infosTexto,
-  infosDescritiva,
   primario,
   cardDesc,
-  fotoSeparacao
+  fotoSeparacao,
+  infosCards
 }: CardSobreProps) => {
   return (
     <div
@@ -33,23 +33,24 @@ export const CardSobre = ({
         <p className={styles.container__containerInfos__descricao}>
           {descricaoCard}
         </p>
-        <div>
+        <div className={styles.container__containerInfos__containerDivisoria}>
           <img
             src={fotoSeparacao}
             alt="Traçado azul separando informações"
             className={styles.container__containerInfos__tracado}
           />
         </div>
-        {infosTexto && infosTexto.map(infos => (
-          <ul key={infos.id}>
-            <h5>{infos.primTituloInfo}</h5>
-            {infos.primItemInfo.map((item, i) => (
-              <li key={i}>{item}</li>
+        {infosCards && infosCards.map(item => (
+          <ul key={item.id} className={styles.container__containerInfos__containerLista}>
+            <h5 className={styles.tituloLista}>{item.infoTituloCard}</h5>
+            {item.infos.map(item => (
+              item.destaque ? <TextoDestaque destaque={item.destaque} texto={item.texto}/> :
+              <li key={item.id} className={styles.itemLista}>{item.texto}</li>
             ))}
           </ul>
         ))}
 
-        {infosDescritiva && infosDescritiva.map(item => (
+        {/* {infosDescritiva && infosDescritiva.map(item => (
             <ul className={styles.container__containerItemDescritiva} key={item.id}>
               <h5>{item.secTituloInfo}</h5>
               {item.secItemInfo.map((item) => (
@@ -60,10 +61,10 @@ export const CardSobre = ({
               </li>
             ))}
             </ul>
-          ))}
+          ))} */}
         { cardDesc && <div className={styles.container__containerInfos__containerCardDesc}>
-          <img src={dente} alt="Imagem de um dente" />
-          <p>{cardDesc}</p>
+          <img src={dente} alt="Imagem de um dente" className={styles.imgCardDesc}/>
+          <p className={styles.textoCardDesc}>{cardDesc}</p>
         </div>}
 
       </div>

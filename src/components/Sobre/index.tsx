@@ -12,10 +12,9 @@ export const Sobre = () => {
           tituloCard={item.tituloCard}
           descricaoCard={item.descricaoCard}
           foto={item.foto}
-          infosTexto={item.infosTexto}
+          infosCards={item.infosCards}
           primario={item.primario}
           subtituloCard={item.subtituloCard}
-          infosDescritiva={item.infosDescritiva}
           alt={item.alt}
           cardDesc={item.cardDesc}
           fotoSeparacao={item.fotoSeparacao}

@@ -1,0 +1,33 @@
+@use "styles/variables" as *;
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.containerBullet{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.containerInfos{
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+
+  &__destaque{
+    text-wrap: nowrap;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline;
+  }
+
+  &__texto {
+    font-size: 16px;
+    display: inline-block;
+  }
+}
