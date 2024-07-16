@@ -1,4 +1,4 @@
-<h1 align="center"> 💻 Lucas Baptista - Portfólio 🚀 </h1>
+<h1 align="center"> 🍿 Pipoca Ágil - Projeto Sr. Dente 🦷 </h1>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -34,6 +34,7 @@ As seguintes ferramentas foram usadas para desenvolver o projeto:
 - REACT <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
 - TYPESCRIPT <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
 - SASS <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"/>
+- STORYBOOK <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original.svg" />
 - NPM <img align="center" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"/>
  
           
