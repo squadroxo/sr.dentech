@@ -14,7 +14,7 @@ const ContainerIntroduction: React.FC = () => {
                 <div className={style.containerTexto}>
                     <h1>Sr. Dente é seu amigo!</h1>
                     <p><span>Aprenda mais sobre saúde bucal com o Sr. Dente! </span> <br></br>
-                Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal</p>
+                Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.</p>
                 </div>
                 <ComponentButton  
                     link='/ContainerIntroduction' 
