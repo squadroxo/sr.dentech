@@ -36,7 +36,7 @@ const dataCards = [
             id: uuidv4(),
             destaque: "Dor e desconforto:",
             texto:
-              "Seu bebê pode ficar irritado e ter dificuldade para dormir. Massageie as gengivas e ofereça mordedores refrigerados",
+              "Seu bebê pode ficar irritado e ter dificuldade para dormir. Massageie as gengivas e ofereça mordedores refrigerados.",
           },
           {
             id: uuidv4(),
@@ -270,7 +270,7 @@ const dataCards = [
             id: uuidv4(),
             destaque: "Celebração em família:",
             texto:
-              "Comemore a perda do dente com uma refeição especial ou um passeio divertido",
+              "Comemore a perda do dente com uma refeição especial ou um passeio divertido.",
           },
         ],
       },

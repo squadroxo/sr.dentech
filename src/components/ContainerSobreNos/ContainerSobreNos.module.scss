@@ -8,6 +8,7 @@
     border-radius: 30px;
     background-color: $corSecundaria;
     max-width: 100%;
+    width: 1920px;
     display: flex;
     justify-content: center;
    
@@ -24,7 +25,7 @@
     width: 1214px;
     height: 159px;
     left: 71px;
-    margin-left: 71.5px; //380-308,5 = 71,5 - medidas figma
+ //   margin-left: 71.5px; //380-308,5 = 71,5 - medidas figma
     
 }
 .containerSobre .tituloSobre{
@@ -98,7 +99,7 @@
     height: 248px;
     top: 870px;
     left: 71px;
-    margin-left: 71.5px;
+   // margin-left: 71.5px;
 }
 .equipeTitulo{
     font-family:$fontDestaque;
@@ -114,7 +115,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
+    //text-align: left;
     color: $branco90;
     
 }
@@ -124,14 +125,14 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 22px;
-    text-align: left;
+ //   text-align: left;
     color: $branco90;
 }
 .equipeContato span{
     font-size: 20px;
     font-weight: 700;
     line-height: 22px;
-    text-align: left;
+  //  text-align: left;
 }
 .btEquipe{
     width: 330px;
