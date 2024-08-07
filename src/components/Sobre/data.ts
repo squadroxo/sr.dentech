@@ -55,7 +55,7 @@ const dataCards = [
     ],
     cardDesc:
       "Lembre-se de agendar a primeira visita ao dentista quando os primeiros dentes aparecerem ou até o primeiro aniversário do bebê!",
-    foto: "assets/bebe-1.jpeg",
+    foto: "assets/bebe-1.png",
     alt: "Foto de um bebê sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
@@ -106,7 +106,7 @@ const dataCards = [
     ],
     cardDesc:
       "Consultas semestrais ao dentista são essenciais para aplicar selantes nos dentes permanentes e prevenir cáries.",
-    foto: "assets/bebe-2.jpeg",
+    foto: "assets/bebe-2.png",
     alt: "Foto de um bebê sorrindo",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
@@ -219,7 +219,7 @@ const dataCards = [
     ],
     cardDesc:
       "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas regulares ao dentista!",
-    foto: "assets/crianca-1.jpeg",
+    foto: "assets/crianca-1.png",
     alt: "Foto de uma criança usando fio dental",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
