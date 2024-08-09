@@ -1,5 +1,5 @@
-import style from 'components/ContainerIntroduction/ContainerIntroduction.module.scss'
 import ComponentButton from "components/ContainerButton";
+import style from 'components/ContainerIntroduction/ContainerIntroduction.module.scss';
 import ilustracaoHome from "../../assets/ilustracaoHome1.png";
 
 const ContainerIntroduction: React.FC = () => {

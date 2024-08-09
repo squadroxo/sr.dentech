@@ -146,13 +146,14 @@
     background-color: $corPrimaria;
     margin:40px 0 40px 0;
     cursor: pointer;
-    
+    transition: transform 0.1s ease, background-color 0.1s ease;
+
+    &:hover {
+        background-color: $corTerciaria;
+        transform: scale(1.05);
+    }  
 }
-.btEquipe:hover{
-    background-color: $corTerciaria;
-    width: 335px;
-    height: 55px;
-}
+
 .labelEquipe{
     width: 114px;
     height: 32px;
