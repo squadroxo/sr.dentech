@@ -1,6 +1,6 @@
 import style from 'components/ContainerSobreNos/ContainerSobreNos.module.scss';
 import ComponentButton from "components/ContainerButton/index";
-import imagemSobreNos from "assets/ImagemSobreNos.png";
+import DenteComEscovaSorrindo from "assets/DenteSorrindoComKitEscovacao.png";
 
 function ContainerSobreNos() {
     return (
@@ -11,7 +11,7 @@ function ContainerSobreNos() {
                     <p className={style.textoSobre}>Bem-vindos ao Projeto Sr. Dente, onde sorrisos são nossa especialidade! Em parceria com o grupo Pipoca Ágil, estamos aqui para tornar a saúde bucal uma jornada divertida e informativa para todas as famílias. Nossa missão é proporcionar educação de qualidade e cuidados odontológicos de primeira, tudo para garantir mais qualidade de vida e muitos sorrisos felizes.</p>
                 </div>
                 <div className={style.containerMeio}>
-                    <img className={style.imagemSobreNos} src={imagemSobreNos} alt="kit escovacao de dente" />
+                    <img className={style.imagemSobreNos} src={DenteComEscovaSorrindo} alt="Dente sorrindo segurando um kit escovacao" />
                     <div className={style.objetivo}>
                         <div className={style.missao}>
                             <h1>Missão:</h1>
