@@ -7,7 +7,8 @@ export const Footer = () => {
 };
   return(
     <footer className={styles.container}>
-      <h3 className={styles.container__contato}>Contato: <span>e-mailsrdente@e-mail.com</span></h3>
+      <h3 className={styles.container__contato}>Contato: <a href="mailto:e-mailsrdente@e-mail.com" target="_blank" rel="noopener noreferrer">e-mailsrdente@e-mail.com</a></h3>
+
       <div className={styles.container__contSec}>
         <p className={styles.container__contSec__txt}>Essa é uma iniciativa voluntária em parceria com o Pipoca Ágil</p>
         <Button  

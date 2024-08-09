@@ -18,9 +18,11 @@
     line-height: 24.2px;
     font-weight: 400;
 
-    span {
+    a {
       font-weight: 700;
-    }
+      text-decoration: none;
+      color: $branco90;
+        }
   }
 
   
