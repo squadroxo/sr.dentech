@@ -49,7 +49,8 @@ function ContainerSobreNos() {
                             primario={true}
                            
                         />
-                        <p className={style.equipeContato}>Contato:<span> e-mailsrdente@e-mail.com</span></p>
+                        <p className={style.equipeContato}> Contato: <a href="mailto:e-mailsrdente@e-mail.com" target="_blank" rel="noopener noreferrer">e-mailsrdente@e-mail.com</a></p>
+                 
                     </div>
             </div>
         </div>
