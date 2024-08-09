@@ -1,6 +1,6 @@
 import ComponentButton from "components/ContainerButton";
 import style from 'components/ContainerIntroduction/ContainerIntroduction.module.scss';
-import ilustracaoHome from "../../assets/ilustracaoHome1.png";
+import criancasEscovandoDente from "../../assets/criancasEscovandoDente.png";
 
 const ContainerIntroduction: React.FC = () => {
     const handleClick = () => {
@@ -26,7 +26,7 @@ const ContainerIntroduction: React.FC = () => {
                 />  
             </div>
             <div className={style.container2}>
-                <img src={ilustracaoHome} alt='criancas escovando dente'/>
+                <img src={criancasEscovandoDente} alt='criancas escovando dente'/>
             </div>
         </div>
         
