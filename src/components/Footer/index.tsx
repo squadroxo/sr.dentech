@@ -12,10 +12,10 @@ export const Footer = () => {
         <p className={styles.container__contSec__txt}>Essa é uma iniciativa voluntária em parceria com o Pipoca Ágil</p>
         <Button  
         label="Pipoca Ágil" 
-        link="/" 
+        link="https://pipocaagil.com.br"
+        target="_blank" 
         onClick={() => { 
           console.log('Botão clicado!'); 
-          window.open('https://pipocaagil.com.br', '_blank'); 
       }} 
          primario={false} className={styles.container__contSec__btn} labelClassName={styles.container__contSec__label}/>
       </div>

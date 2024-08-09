@@ -18,6 +18,7 @@ const ContainerIntroduction: React.FC = () => {
                 </div>
                 <ComponentButton  
                     link='/ContainerIntroduction' 
+                    target="_blank"
                     onClick={handleClick} 
                     label="Saiba mais"
                     className={style.btSaibaMais}
