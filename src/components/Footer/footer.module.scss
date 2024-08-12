@@ -18,9 +18,11 @@
     line-height: 24.2px;
     font-weight: 400;
 
-    span {
+    a {
       font-weight: 700;
-    }
+      text-decoration: none;
+      color: $branco90;
+        }
   }
 
   
@@ -46,11 +48,11 @@
         border-radius: 30px;
         padding: 10px;
         cursor: pointer;
+        transition: transform 0.1s ease, background-color 0.1s ease;
       }
       &__btn:hover{
         background-color: $corTerciaria;
-        width: 341px;
-        height: 53px;
+        transform: scale(1.05);
       }
       &__label{
         font-family: $fontDestaque;

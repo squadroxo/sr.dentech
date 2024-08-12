@@ -49,19 +49,6 @@ export const CardSobre = ({
             ))}
           </ul>
         ))}
-
-        {/* {infosDescritiva && infosDescritiva.map(item => (
-            <ul className={styles.container__containerItemDescritiva} key={item.id}>
-              <h5>{item.secTituloInfo}</h5>
-              {item.secItemInfo.map((item) => (
-                <li key={item.id} className={styles.container__containerItemDescritiva__item}>
-                  <div className={styles.container__containerItemDescritiva__item__container}>
-                    <p><span>{item.destaque}</span> {item.texto}</p>
-                  </div>
-              </li>
-            ))}
-            </ul>
-          ))} */}
         { cardDesc && <div className={styles.container__containerInfos__containerCardDesc}>
           <img src={dente} alt="Imagem de um dente" className={styles.imgCardDesc}/>
           <p className={styles.textoCardDesc}>{cardDesc}</p>
