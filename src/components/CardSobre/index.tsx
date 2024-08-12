@@ -44,7 +44,7 @@ export const CardSobre = ({
           <ul key={item.id} className={styles.container__containerInfos__containerLista}>
             <h5 className={styles.tituloLista}>{item.infoTituloCard}</h5>
             {item.infos.map(item => (
-              item.destaque ? <TextoDestaque destaque={item.destaque} texto={item.texto}/> :
+              item.destaque ? <TextoDestaque destaque={item.destaque} texto={item.texto} key={item.id}/> :
               <li key={item.id} className={styles.itemLista}>{item.texto}</li>
             ))}
           </ul>
