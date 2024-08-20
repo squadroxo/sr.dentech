@@ -12,7 +12,6 @@ const ContainerIntroduction: React.FC = () => {
         <div className={style.containerIntroduction}>
             <div className={style.container1}>
                 <div className={style.containerTexto}>
-                    <h1>Sr. Dente é seu amigo!</h1>
                     <p><span>Aprenda mais sobre saúde bucal com o Sr. Dente! </span> <br></br>
                 Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.</p>
                 </div>
@@ -27,6 +26,7 @@ const ContainerIntroduction: React.FC = () => {
                 />  
             </div>
             <div className={style.container2}>
+                 <h1>Sr. Dente é seu amigo!</h1>
                 <img src={criancasEscovandoDente} alt='criancas escovando dente'/>
             </div>
         </div>
