@@ -1,6 +1,6 @@
 @use "styles/variables" as *;
 
-.container{
+.container {
   background-color: $corPrimaria;
   width: 100%;
   height: 115px;
@@ -9,28 +9,26 @@
   align-items: center;
   justify-content: space-evenly;
 
-  .containerTitulo{
+  .containerTitulo {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    &__img{
+    &__img {
       width: 157px;
       height: 133.74px;
       margin-top: 21.35px;
       left: 24.77px;
-
     }
-
   }
 
-  .containerLinks{
-
-    &__lista{
+  .containerLinks {
+    .containerLinks {
       display: flex;
       gap: 72px;
-      &__item{
+
+      .containerLinks__lista__item {
         font-family: $fontDestaque;
         color: $branco100;
         font-weight: 700;
@@ -39,5 +37,59 @@
         font-size: 20px;
       }
     }
+
+    .containerMobile{
+      display: none;
+    }
+
+    .iconMenu{
+      display: none;
+    }
   }
+
 }
+
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    position: relative;
+    max-width: 100%;
+    justify-content: space-between;
+
+  .containerLinks{
+    .containerLinks__lista{
+      display: none;
+
+      .containerLinks__lista__item{
+        font-size: 14px;
+      }
+    }
+
+    .containerMobile{
+      display: flex;
+      background-color: $corPrimaria;
+      flex-direction: column;
+      position: absolute;
+      top: 115px;
+      right: 0;
+      border-radius: 10px;
+      padding: 1rem;
+      gap: 0;
+      margin: 10px 0 0 0;
+
+      .containerLinks__lista__item {
+        font-family: $fontDestaque;
+        color: $branco100;
+        font-weight: 700;
+        line-height: 31.88px;
+        text-decoration: none;
+        font-size: 14px;
+        
+      }
+    }
+
+    .iconMenu{
+      display: flex;
+    }
+  }}}
