@@ -18,7 +18,7 @@ export const CardSobre = ({
 }: CardSobreProps) => {
   return (
     <div
-      className={styles.container}
+    className={styles.container}
       style={{ flexDirection: primario ? "row" : "row-reverse" }}
     >
       <img src={foto} alt={alt} className={styles.container__foto} />
