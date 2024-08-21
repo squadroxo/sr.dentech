@@ -13,6 +13,7 @@ type infosCardsProps = {
 export type dataCardSobreProps = {
   id: string,
   tituloCard: string,
+  slug: string,
   subtituloCard?: string,
   descricaoCard: string,
   infosCards: infosCardsProps[],

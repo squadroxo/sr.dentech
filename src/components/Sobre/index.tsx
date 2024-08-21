@@ -1,8 +1,8 @@
 import styles from "./sobre.module.scss";
-import data from "./data";
+import data from "../../data/data";
 import { CardSobre } from "../CardSobre";
 import { CardSobreMobile } from "../CardSobreMobile";
-import linhaDivisoria from "../../assets/divisoria.png";
+import linhaDivisoria from "../../assetsIcons/divisoria.png";
 
 export const Sobre = () => {
   return (
@@ -37,6 +37,7 @@ export const Sobre = () => {
             cardDesc={item.cardDesc}
             fotoSeparacao={item.fotoSeparacao}
             descMobile={item.descMobile}
+            slug={item.slug}
           />
         )) }
       </div>
