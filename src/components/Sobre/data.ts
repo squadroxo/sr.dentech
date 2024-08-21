@@ -1,5 +1,6 @@
+import { dataCardSobreProps } from "@/types/dataCardsSobre";
 import { v4 as uuidv4 } from "uuid";
-const dataCards = [
+const dataCards: dataCardSobreProps[] = [
   {
     id: uuidv4(),
     tituloCard: "Primeiros dentinhos:",
@@ -59,6 +60,7 @@ const dataCards = [
     alt: "Foto de um bebê sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    descMobile: "Como cuidar da primeira dentição do seu bebê..."
   },
 
   {
@@ -110,6 +112,7 @@ const dataCards = [
     alt: "Foto de um bebê sorrindo",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
+    descMobile: "Cuidados durante a troca dos primeiros dentes"
   },
 
   {
@@ -163,6 +166,7 @@ const dataCards = [
     alt: "Foto de um mulher sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    descMobile: "Dicas de saúde bucal para adultos"
   },
 
   {
@@ -279,6 +283,7 @@ const dataCards = [
     alt: "Foto de uma criança sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    cardDesc: "Dicas de saúde bucal para adultos"
   },
 
   {
@@ -335,6 +340,7 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
+    cardDesc: "Como fazer as crianças adorarem escovar os dentes"
   },
 
   {
@@ -389,6 +395,7 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    cardDesc: "Alimentos que ajudam a proteger os dentes"
   },
 
   {
@@ -439,6 +446,7 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
+    cardDesc: "Quando e como introduzir esse hábito"
   },
 
   {
@@ -496,6 +504,7 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    cardDesc: "Como criar uma rotina saudável juntos"
   },
 ];
 

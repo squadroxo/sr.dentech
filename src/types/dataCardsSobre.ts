@@ -20,5 +20,6 @@ export type dataCardSobreProps = {
   cardDesc?: string,
   alt: string,
   primario: boolean,
-  fotoSeparacao: string
+  fotoSeparacao: string,
+  descMobile?: string
 };
