@@ -2,9 +2,9 @@ import styles from "./Header.module.scss";
 import logo from "../../assets/logoSrDente.png";
 import { dataLinks } from "./data"
 import { useNavigate } from "react-router";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { MenuMobile } from "../MenuMobile";
+import { MenuBurguer } from "../Icons/MenuBurguer";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -23,7 +23,9 @@ export const Header = () => {
           ))}
         </ul>
         { isOpen && <MenuMobile />}
-        <GiHamburgerMenu className={styles.iconMenu} size={50} color="white" onClick={() => setIsOpen(pv => !pv)}/>
+        <button onClick={() => setIsOpen(pv => !pv)} className={styles.iconMenu}>
+          <MenuBurguer />
+        </button>
       </nav>
     </header>
   )
