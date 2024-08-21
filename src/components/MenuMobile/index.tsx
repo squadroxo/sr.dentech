@@ -1,7 +1,7 @@
 import { dataLinksMobile } from "./data";
-import styles from "./HeaderMobile.module.scss";
+import styles from "./MenuMobile.module.scss";
 
-export const HeaderMobile = () => {
+export const MenuMobile = () => {
   return (
     <ul className={styles.containerMobile}>
       { dataLinksMobile.map(link => (
