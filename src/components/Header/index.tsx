@@ -4,11 +4,12 @@ import { dataLinks } from "./data"
 import { useNavigate } from "react-router";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { HeaderMobile } from "../HeaderMobile";
 
 export const Header = () => {
   const navigate = useNavigate();
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className={styles.container}>
@@ -16,11 +17,12 @@ export const Header = () => {
         <img src={logo} alt="Imagem de um dente acenando" className={styles.containerTitulo__img}/>
       </div>
       <nav className={styles.containerLinks}>
-        <ul className={isOpen ? styles.containerMobile : styles.containerLinks__lista}>
+        <ul className={styles.containerLinks__lista}>
           { dataLinks.map(link => (
             <li key={link.id}><a href={link.href} className={styles.containerLinks__lista__item}>{link.texto}</a></li>
-          )) }
+          ))}
         </ul>
+        { isOpen && <HeaderMobile />}
         <GiHamburgerMenu className={styles.iconMenu} size={50} color="white" onClick={() => setIsOpen(pv => !pv)}/>
       </nav>
     </header>
