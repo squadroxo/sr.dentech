@@ -1,6 +1,6 @@
 import ComponentButton from "components/ContainerButton";
 import style from 'components/ContainerIntroduction/ContainerIntroduction.module.scss';
-import criancasEscovandoDente from "../../assets/criancasEscovandoDente.png";
+import criancasEscovandoDente from "../../assetsIcons/criancasEscovandoDente.png";
 
 const ContainerIntroduction: React.FC = () => {
     const handleClick = () => {

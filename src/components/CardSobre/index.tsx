@@ -3,7 +3,7 @@ import styles from "./cardSobre.module.scss";
 import dente from "./assets/dente.svg";
 import { TextoDestaque } from "../TextoDestaque";
 
-type CardSobreProps = Omit<dataCardSobreProps, "id">;
+type CardSobreProps = Omit<dataCardSobreProps, "id" | "descMobile" | "slug">;
 
 export const CardSobre = ({
   tituloCard,
@@ -18,7 +18,7 @@ export const CardSobre = ({
 }: CardSobreProps) => {
   return (
     <div
-      className={styles.container}
+    className={styles.container}
       style={{ flexDirection: primario ? "row" : "row-reverse" }}
     >
       <img src={foto} alt={alt} className={styles.container__foto} />

@@ -1,6 +1,6 @@
 import style from 'components/ContainerSobreNos/ContainerSobreNos.module.scss';
 import ComponentButton from "components/ContainerButton/index";
-import DenteComEscovaSorrindo from "assets/DenteSorrindoComKitEscovacao.png";
+import DenteComEscovaSorrindo from "assetsIcons/DenteSorrindoComKitEscovacao.png";
 
 function ContainerSobreNos() {
     return (
