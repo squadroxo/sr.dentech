@@ -1,8 +1,11 @@
+import { dataCardSobreProps } from "@/types/dataCardsSobre";
 import { v4 as uuidv4 } from "uuid";
-const dataCards = [
+
+const dataCards: dataCardSobreProps[] = [
   {
     id: uuidv4(),
     tituloCard: "Primeiros dentinhos:",
+    slug: "primeiros-dentinhos",
     subtituloCard: "Como cuidar da primeira dentição do seu bebê",
     descricaoCard:
       "Os primeiros dentinhos do seu bebê são um marco importante! Eles geralmente começam a aparecer entre os 6 e 12 meses de idade. Aqui estão algumas dicas para cuidar desses dentinhos tão especiais:",
@@ -59,11 +62,13 @@ const dataCards = [
     alt: "Foto de um bebê sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    descMobile: "Como cuidar da primeira dentição do seu bebê..."
   },
 
   {
     id: uuidv4(),
     tituloCard: "Hora da troca!",
+    slug: "hora-troca",
     subtituloCard: "Cuidados durante a troca dos primeiros dentes",
     descricaoCard:
       "A troca dos dentes de leite pelos permanentes é um processo natural que começa aos 6 anos e pode durar até os 12-13 anos. Veja como garantir que tudo corra bem:",
@@ -110,11 +115,13 @@ const dataCards = [
     alt: "Foto de um bebê sorrindo",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
+    descMobile: "Cuidados durante a troca dos primeiros dentes"
   },
 
   {
     id: uuidv4(),
     tituloCard: "Cuidando do sorriso:",
+    slug: "cuidando-sorriso",
     subtituloCard: "Dicas de saúde bucal para adultos",
     descricaoCard:
       "Manter uma boa higiene bucal é fundamental para um sorriso saudável! Confira algumas dicas simples para cuidar dos seus dentes:",
@@ -163,11 +170,13 @@ const dataCards = [
     alt: "Foto de um mulher sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    descMobile: "Dicas de saúde bucal para adultos"
   },
 
   {
     id: uuidv4(),
     tituloCard: "Por que os dentes de leite são tão importantes?",
+    slug: "dentes-leite",
     descricaoCard:
       "Muita gente acha que os dentes de leite não são tão importantes, já que vão cair de qualquer jeito. Mas, na verdade, eles têm um papel essencial no desenvolvimento da criança! Vamos descobrir por quê?",
     infosCards: [
@@ -229,6 +238,7 @@ const dataCards = [
     id: uuidv4(),
     tituloCard: "A verdade sobre a fada do dente:",
     subtituloCard: "Como tornar a perda dos dentes de leite divertida",
+    slug: "fada-dente",
     descricaoCard:
       "A perda dos dentes de leite pode ser um momento assustador para algumas crianças, mas também pode ser divertido! Vamos falar sobre a Fada do Dente e como transformar essa experiência em uma celebração.",
     infosCards: [
@@ -279,11 +289,13 @@ const dataCards = [
     alt: "Foto de uma criança sorrindo",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    cardDesc: "Dicas de saúde bucal para adultos"
   },
 
   {
     id: uuidv4(),
     tituloCard: "Escovação divertida:",
+    slug: "escovacao-divertida",
     subtituloCard: "Como fazer as crianças adorarem escovar os dentes",
     descricaoCard:
       "Fazer com que as crianças escovem os dentes pode ser um desafio, mas com algumas dicas e truques, essa tarefa pode se tornar uma atividade divertida!",
@@ -335,11 +347,13 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
+    cardDesc: "Como fazer as crianças adorarem escovar os dentes"
   },
 
   {
     id: uuidv4(),
     tituloCard: "Cuidado com as cáries:",
+    slug: "cuidado-caries",
     subtituloCard: "Alimentos que ajudam a proteger os dentes",
     descricaoCard:
       "Cuidar dos dentes vai além da escovação. A alimentação tem um papel crucial na saúde bucal. Vamos falar sobre alimentos que ajudam a proteger os dentes contra cáries.",
@@ -389,11 +403,13 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    cardDesc: "Alimentos que ajudam a proteger os dentes"
   },
 
   {
     id: uuidv4(),
     tituloCard: "Fio dental para crianças:",
+    slug: "fio-dental-criancas",
     subtituloCard: "Quando e como introduzir esse hábito",
     descricaoCard:
       "O fio dental é tão importante quanto a escovação, mas muitas vezes é esquecido, especialmente quando se trata de crianças. Vamos descobrir como e quando introduzir o fio dental para os pequenos.",
@@ -439,11 +455,13 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: false,
     fotoSeparacao: "assets/pontilhado.svg",
+    cardDesc: "Quando e como introduzir esse hábito"
   },
 
   {
     id: uuidv4(),
     tituloCard: "Higiene bucal em família:",
+    slug: "higiene-bucal",
     subtituloCard: "Como criar uma rotina saudável juntos",
     descricaoCard:
       "Criar uma rotina de higiene bucal em família pode ser divertido e educativo. Vamos ver como você pode fazer isso de forma simples e eficaz.",
@@ -496,6 +514,7 @@ const dataCards = [
     alt: "Foto de uma criança escovand os dentes",
     primario: true,
     fotoSeparacao: "assets/tracado.svg",
+    cardDesc: "Como criar uma rotina saudável juntos"
   },
 ];
 

@@ -3,7 +3,7 @@ import styles from "./cardSobre.module.scss";
 import dente from "./assets/dente.svg";
 import { TextoDestaque } from "../TextoDestaque";
 
-type CardSobreProps = Omit<dataCardSobreProps, "id">;
+type CardSobreProps = Omit<dataCardSobreProps, "id" | "descMobile" | "slug">;
 
 export const CardSobre = ({
   tituloCard,

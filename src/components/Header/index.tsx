@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import logo from "../../assets/logoSrDente.png";
+import logo from "../../assetsIcons/logoSrDente.png";
 import { dataLinks } from "./data"
 import { useNavigate } from "react-router";
 import { useState } from "react";
