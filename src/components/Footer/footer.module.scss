@@ -1,6 +1,4 @@
-
 @use "styles/variables" as *;
-
 
   .container {
     background-color: $corPrimaria;
@@ -45,7 +43,7 @@
       &__btn {
         background-color: $corSecundaria;
         border: none;
-        width: 336px;
+        width: 224px;
         height: 48px;
         border-radius: 30px;
         padding: 10px;
@@ -68,7 +66,7 @@
 
   }
 
-  @media screen and (min-width: 360px) and (max-width: 425px) {
+  @media screen and (min-width: 360px) and (max-width: 500px) {
     .container {
       width: 100%;
       height: 157px;
