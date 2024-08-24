@@ -2,6 +2,7 @@ import { dataCardSobreProps } from "@/types/dataCardsSobre";
 import styles from "./cardSobre.module.scss";
 import dente from "./assets/dente.svg";
 import { TextoDestaque } from "../TextoDestaque";
+import { motion } from "framer-motion"
 
 type CardSobreProps = Omit<dataCardSobreProps, "id" | "descMobile" | "slug">;
 
@@ -17,9 +18,12 @@ export const CardSobre = ({
   infosCards
 }: CardSobreProps) => {
   return (
-    <div
-    className={styles.container}
+    <motion.div
+      className={styles.container}
       style={{ flexDirection: primario ? "row" : "row-reverse" }}
+      initial={{ x: primario ? -300 : 300 }}
+      whileInView={{ x: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
     >
       <img src={foto} alt={alt} className={styles.container__foto} />
       <div className={styles.container__containerInfos}>
@@ -55,6 +59,6 @@ export const CardSobre = ({
         </div>}
 
       </div>
-    </div>
+    </motion.div>
   );
 };
