@@ -1,10 +1,16 @@
 import style from 'components/ContainerSobreNos/ContainerSobreNos.module.scss';
 import ComponentButton from "components/ContainerButton/index";
 import DenteComEscovaSorrindo from "assetsIcons/DenteSorrindoComKitEscovacao.png";
+import { motion } from "framer-motion"
 
 function ContainerSobreNos() {
     return (
-        <div className={style.wrapper}>
+        <motion.div 
+            className={style.wrapper}
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 0.2 }}
+        >
             <div className={style.containerGeral}>
                 <div className={style.containerSobre}>
                     <h1 className={style.tituloSobre}>Sobre Nós</h1>
@@ -53,7 +59,7 @@ function ContainerSobreNos() {
                  
                     </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 export default ContainerSobreNos;
