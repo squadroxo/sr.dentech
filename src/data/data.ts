@@ -4,10 +4,10 @@ import { v4 as uuidv4 } from "uuid";
 const dataCards: dataCardSobreProps[] = [
   {
     id: uuidv4(),
-    tituloCard: "Primeiros dentinhos:",
+    titleCard: "Primeiros dentinhos:",
     slug: "primeiros-dentinhos",
-    subtituloCard: "Como cuidar da primeira dentição do seu bebê",
-    descricaoCard:
+    subtitleCard: "Como cuidar da primeira dentição do seu bebê",
+    descCard:
       "Os primeiros dentinhos do seu bebê são um marco importante! Eles geralmente começam a aparecer entre os 6 e 12 meses de idade. Aqui estão algumas dicas para cuidar desses dentinhos tão especiais:",
     infosCards: [
       {
@@ -58,19 +58,19 @@ const dataCards: dataCardSobreProps[] = [
     ],
     cardDesc:
       "Lembre-se de agendar a primeira visita ao dentista quando os primeiros dentes aparecerem ou até o primeiro aniversário do bebê!",
-    foto: "assets/bebe-1.png",
+    photo: "assets/bebe-1.png",
     alt: "Foto de um bebê sorrindo",
-    primario: true,
-    fotoSeparacao: "assets/tracado.svg",
+    primary: true,
+    photoDivision: "assets/tracado.svg",
     descMobile: "Como cuidar da primeira dentição do seu bebê..."
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Hora da troca!",
+    titleCard: "Hora da troca!",
     slug: "hora-troca",
-    subtituloCard: "Cuidados durante a troca dos primeiros dentes",
-    descricaoCard:
+    subtitleCard: "Cuidados durante a troca dos primeiros dentes",
+    descCard:
       "A troca dos dentes de leite pelos permanentes é um processo natural que começa aos 6 anos e pode durar até os 12-13 anos. Veja como garantir que tudo corra bem:",
     infosCards: [
       {
@@ -111,19 +111,19 @@ const dataCards: dataCardSobreProps[] = [
     ],
     cardDesc:
       "Consultas semestrais ao dentista são essenciais para aplicar selantes nos dentes permanentes e prevenir cáries.",
-    foto: "assets/bebe-2.png",
+    photo: "assets/bebe-2.png",
     alt: "Foto de um bebê sorrindo",
-    primario: false,
-    fotoSeparacao: "assets/pontilhado.svg",
+    primary: false,
+    photoDivision: "assets/pontilhado.svg",
     descMobile: "Cuidados durante a troca dos primeiros dentes"
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Cuidando do sorriso:",
+    titleCard: "Cuidando do sorriso:",
     slug: "cuidando-sorriso",
-    subtituloCard: "Dicas de saúde bucal para adultos",
-    descricaoCard:
+    subtitleCard: "Dicas de saúde bucal para adultos",
+    descCard:
       "Manter uma boa higiene bucal é fundamental para um sorriso saudável! Confira algumas dicas simples para cuidar dos seus dentes:",
     infosCards: [
       {
@@ -166,18 +166,18 @@ const dataCards: dataCardSobreProps[] = [
     ],
     cardDesc:
       "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas regulares ao dentista!",
-    foto: "assets/senhora-1.png",
+    photo: "assets/senhora-1.png",
     alt: "Foto de um mulher sorrindo",
-    primario: true,
-    fotoSeparacao: "assets/tracado.svg",
+    primary: true,
+    photoDivision: "assets/tracado.svg",
     descMobile: "Dicas de saúde bucal para adultos"
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Por que os dentes de leite são tão importantes?",
+    titleCard: "Por que os dentes de leite são tão importantes?",
     slug: "dentes-leite",
-    descricaoCard:
+    descCard:
       "Muita gente acha que os dentes de leite não são tão importantes, já que vão cair de qualquer jeito. Mas, na verdade, eles têm um papel essencial no desenvolvimento da criança! Vamos descobrir por quê?",
     infosCards: [
       {
@@ -228,18 +228,18 @@ const dataCards: dataCardSobreProps[] = [
     ],
     cardDesc:
       "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas regulares ao dentista!",
-    foto: "assets/crianca-1.png",
+    photo: "assets/crianca-1.png",
     alt: "Foto de uma criança usando fio dental",
-    primario: false,
-    fotoSeparacao: "assets/pontilhado.svg",
+    primary: false,
+    photoDivision: "assets/pontilhado.svg",
   },
 
   {
     id: uuidv4(),
-    tituloCard: "A verdade sobre a fada do dente:",
-    subtituloCard: "Como tornar a perda dos dentes de leite divertida",
+    titleCard: "A verdade sobre a fada do dente:",
+    subtitleCard: "Como tornar a perda dos dentes de leite divertida",
     slug: "fada-dente",
-    descricaoCard:
+    descCard:
       "A perda dos dentes de leite pode ser um momento assustador para algumas crianças, mas também pode ser divertido! Vamos falar sobre a Fada do Dente e como transformar essa experiência em uma celebração.",
     infosCards: [
       {
@@ -285,19 +285,19 @@ const dataCards: dataCardSobreProps[] = [
         ],
       },
     ],
-    foto: "assets/crianca-2.png",
+    photo: "assets/crianca-2.png",
     alt: "Foto de uma criança sorrindo",
-    primario: true,
-    fotoSeparacao: "assets/tracado.svg",
+    primary: true,
+    photoDivision: "assets/tracado.svg",
     cardDesc: "Dicas de saúde bucal para adultos"
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Escovação divertida:",
+    titleCard: "Escovação divertida:",
     slug: "escovacao-divertida",
-    subtituloCard: "Como fazer as crianças adorarem escovar os dentes",
-    descricaoCard:
+    subtitleCard: "Como fazer as crianças adorarem escovar os dentes",
+    descCard:
       "Fazer com que as crianças escovem os dentes pode ser um desafio, mas com algumas dicas e truques, essa tarefa pode se tornar uma atividade divertida!",
     infosCards: [
       {
@@ -343,19 +343,19 @@ const dataCards: dataCardSobreProps[] = [
         ],
       },
     ],
-    foto: "assets/crianca-3.png",
+    photo: "assets/crianca-3.png",
     alt: "Foto de uma criança escovand os dentes",
-    primario: false,
-    fotoSeparacao: "assets/pontilhado.svg",
+    primary: false,
+    photoDivision: "assets/pontilhado.svg",
     cardDesc: "Como fazer as crianças adorarem escovar os dentes"
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Cuidado com as cáries:",
+    titleCard: "Cuidado com as cáries:",
     slug: "cuidado-caries",
-    subtituloCard: "Alimentos que ajudam a proteger os dentes",
-    descricaoCard:
+    subtitleCard: "Alimentos que ajudam a proteger os dentes",
+    descCard:
       "Cuidar dos dentes vai além da escovação. A alimentação tem um papel crucial na saúde bucal. Vamos falar sobre alimentos que ajudam a proteger os dentes contra cáries.",
     infosCards: [
       {
@@ -399,19 +399,19 @@ const dataCards: dataCardSobreProps[] = [
         ],
       },
     ],
-    foto: "assets/crianca-4.png",
+    photo: "assets/crianca-4.png",
     alt: "Foto de uma criança escovand os dentes",
-    primario: true,
-    fotoSeparacao: "assets/tracado.svg",
+    primary: true,
+    photoDivision: "assets/tracado.svg",
     cardDesc: "Alimentos que ajudam a proteger os dentes"
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Fio dental para crianças:",
+    titleCard: "Fio dental para crianças:",
     slug: "fio-dental-criancas",
-    subtituloCard: "Quando e como introduzir esse hábito",
-    descricaoCard:
+    subtitleCard: "Quando e como introduzir esse hábito",
+    descCard:
       "O fio dental é tão importante quanto a escovação, mas muitas vezes é esquecido, especialmente quando se trata de crianças. Vamos descobrir como e quando introduzir o fio dental para os pequenos.",
     infosCards: [
       {
@@ -451,19 +451,19 @@ const dataCards: dataCardSobreProps[] = [
       },
     ],
 
-    foto: "assets/crianca-5.png",
+    photo: "assets/crianca-5.png",
     alt: "Foto de uma criança escovand os dentes",
-    primario: false,
-    fotoSeparacao: "assets/pontilhado.svg",
+    primary: false,
+    photoDivision: "assets/pontilhado.svg",
     cardDesc: "Quando e como introduzir esse hábito"
   },
 
   {
     id: uuidv4(),
-    tituloCard: "Higiene bucal em família:",
+    titleCard: "Higiene bucal em família:",
     slug: "higiene-bucal",
-    subtituloCard: "Como criar uma rotina saudável juntos",
-    descricaoCard:
+    subtitleCard: "Como criar uma rotina saudável juntos",
+    descCard:
       "Criar uma rotina de higiene bucal em família pode ser divertido e educativo. Vamos ver como você pode fazer isso de forma simples e eficaz.",
     infosCards: [
       {
@@ -510,10 +510,10 @@ const dataCards: dataCardSobreProps[] = [
       },
     ],
 
-    foto: "assets/familia-1.png",
+    photo: "assets/familia-1.png",
     alt: "Foto de uma criança escovand os dentes",
-    primario: true,
-    fotoSeparacao: "assets/tracado.svg",
+    primary: true,
+    photoDivision: "assets/tracado.svg",
     cardDesc: "Como criar uma rotina saudável juntos"
   },
 ];
