@@ -4,9 +4,6 @@ import criancasEscovandoDente from "../../assetsIcons/criancasEscovandoDente.png
 import { motion } from "framer-motion"
 
 const ContainerIntroduction: React.FC = () => {
-    const handleClick = () => {
-        // Vamos deixar essa funcao aqui ate termos a tela saiba mais
-      };
     
     return (
         <motion.div 
@@ -20,10 +17,9 @@ const ContainerIntroduction: React.FC = () => {
                     <p><span>Aprenda mais sobre saúde bucal com o Sr. Dente! </span> <br></br>
                 Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.</p>
                 </div>
-                <ComponentButton  
+                <ComponentButton
                     link='/ContainerIntroduction' 
                     target="_blank"
-                    onClick={handleClick} 
                     label="Saiba mais"
                     className={style.btSaibaMais}
                     labelClassName={style.labelSaibaMais}
