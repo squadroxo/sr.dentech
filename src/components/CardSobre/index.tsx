@@ -2,40 +2,44 @@ import { dataCardSobreProps } from "@/types/dataCardsSobre";
 import styles from "./cardSobre.module.scss";
 import dente from "./assets/dente.svg";
 import { TextoDestaque } from "../TextoDestaque";
+import { motion } from "framer-motion"
 
 type CardSobreProps = Omit<dataCardSobreProps, "id" | "descMobile" | "slug">;
 
 export const CardSobre = ({
-  tituloCard,
-  foto,
+  titleCard,
+  photo,
   alt,
-  subtituloCard,
-  descricaoCard,
-  primario,
+  subtitleCard,
+  descCard,
+  primary,
   cardDesc,
-  fotoSeparacao,
-  infosCards
+  photoDivision,
+  infosCards,
 }: CardSobreProps) => {
   return (
-    <div
-    className={styles.container}
-      style={{ flexDirection: primario ? "row" : "row-reverse" }}
+    <motion.div
+      className={styles.container}
+      style={{ flexDirection: primary ? "row" : "row-reverse" }}
+      initial={{ x: primary ? -300 : 300 }}
+      whileInView={{ x: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
     >
-      <img src={foto} alt={alt} className={styles.container__foto} />
+      <img src={photo} alt={alt} className={styles.container__foto} />
       <div className={styles.container__containerInfos}>
         <h3 className={styles.container__containerInfos__titulo}>
-          {tituloCard}
+          {titleCard}
         </h3>
-        { subtituloCard && <h4 className={styles.container__containerInfos__subtitulo}>
-          {subtituloCard}
+        { subtitleCard && <h4 className={styles.container__containerInfos__subtitulo}>
+          {subtitleCard}
         </h4>}
 
         <p className={styles.container__containerInfos__descricao}>
-          {descricaoCard}
+          {descCard}
         </p>
         <div className={styles.container__containerInfos__containerDivisoria}>
           <img
-            src={fotoSeparacao}
+            src={photoDivision}
             alt="Traçado azul separando informações"
             className={styles.container__containerInfos__tracado}
           />
@@ -55,6 +59,6 @@ export const CardSobre = ({
         </div>}
 
       </div>
-    </div>
+    </motion.div>
   );
 };

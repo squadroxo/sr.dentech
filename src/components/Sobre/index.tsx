@@ -12,30 +12,30 @@ export const Sobre = () => {
       { data.map(item => (
         <CardSobre
           key={item.id} 
-          tituloCard={item.tituloCard}
-          descricaoCard={item.descricaoCard}
-          foto={item.foto}
+          titleCard={item.titleCard}
+          descCard={item.descCard}
+          photo={item.photo}
           infosCards={item.infosCards}
-          primario={item.primario}
-          subtituloCard={item.subtituloCard}
+          primary={item.primary}
+          subtitleCard={item.subtitleCard}
           alt={item.alt}
           cardDesc={item.cardDesc}
-          fotoSeparacao={item.fotoSeparacao}
+          photoDivision={item.photoDivision}
         />
       )) }
       <div className={styles.containerMobile}>
         { data.map(item => (
           <CardSobreMobile 
             key={item.id} 
-            tituloCard={item.tituloCard}
-            descricaoCard={item.descricaoCard}
-            foto={item.foto}
+            titleCard={item.titleCard}
+            descCard={item.descCard}
+            photo={item.photo}
             infosCards={item.infosCards}
-            primario={item.primario}
-            subtituloCard={item.subtituloCard}
+            primary={item.primary}
+            subtitleCard={item.subtitleCard}
             alt={item.alt}
             cardDesc={item.cardDesc}
-            fotoSeparacao={item.fotoSeparacao}
+            photoDivision={item.photoDivision}
             descMobile={item.descMobile}
             slug={item.slug}
           />

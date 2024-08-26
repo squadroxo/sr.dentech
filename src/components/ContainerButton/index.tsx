@@ -1,9 +1,7 @@
-// Button.tsx
 import React from 'react';
-import styles from "./button.module.scss";
 
 type ButtonProps = {
-  onClick: () => void;
+  onClick?: () => void;
   label: string;
   target?: string;
   disabled?: boolean;

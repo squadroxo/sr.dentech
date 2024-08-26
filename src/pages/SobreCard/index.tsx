@@ -23,13 +23,13 @@ export const SobreCardPage = () => {
         <button className={styles.buttonBack} onClick={() => navigate("/")}>
           <Backfoward />
         </button>
-        <h2 className={styles.titulo}>{cardInformativo.tituloCard}</h2>
+        <h2 className={styles.titulo}>{cardInformativo.titleCard}</h2>
       </div>
-      <h3 className={styles.subtitulo}>{cardInformativo.subtituloCard}</h3>
-      <img src={cardInformativo.primario ? pontilhado : tracado} alt="" className={styles.divisoria}/>
+      <h3 className={styles.subtitulo}>{cardInformativo.subtitleCard}</h3>
+      <img src={cardInformativo.primary ? pontilhado : tracado} alt="" className={styles.divisoria}/>
       <div className={styles.containerInfos}>
-        <img src={`/${cardInformativo.foto}`} alt={cardInformativo.alt} className={styles.foto}/>
-        <p className={styles.descricaoCard}>{cardInformativo.descricaoCard}</p>
+        <img src={`/${cardInformativo.photo}`} alt={cardInformativo.alt} className={styles.foto}/>
+        <p className={styles.descricaoCard}>{cardInformativo.descCard}</p>
         {cardInformativo.infosCards.map(item => (
           <Fragment key={item.id}>
             <h4 className={styles.subtituloInfo}>{item.infoTituloCard}</h4>
