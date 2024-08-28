@@ -6,7 +6,7 @@ import styles from "./app.module.scss";
 import { NotFoundPage } from "./pages/NotFound";
 import ConstrucaoPage from "./pages/Construcao";
 import { SobreCardPage } from "./pages/SobreCard";
-
+import FuncinalidadeRequisitos from "./components/ContainerFuncionalidadeRequisitos";
 const App: React.FC = () => {
   return (
     <BrowserRouter>
@@ -16,9 +16,11 @@ const App: React.FC = () => {
           <Route path="/aprenda-mais/:slugCard" element={<SobreCardPage />}/>
           <Route path="*" element={<NotFoundPage />}/>
           <Route path="/construcao" element={<ConstrucaoPage />}/>
+          <Route path="/SaibaMais" element={<FuncinalidadeRequisitos />}/>
         </Routes>
         <div className={styles.containerFooter}>
           <Footer />
+         
         </div>
     </BrowserRouter>
   );

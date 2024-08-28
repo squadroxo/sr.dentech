@@ -1,0 +1,45 @@
+{
+    "tituloFuncionalidades": "Funcionalidades Incríveis:",
+    "funcionalidades": [
+      {
+        "titulo": "Cadastro Familiar Personalizado:",
+        "texto": "Agora você pode criar perfis para cada membro da sua família, incluindo pais e filhos, com direito a foto e tudo. É como ter um álbum de figurinhas digital, só que para dentes!"
+      },
+      {
+        "titulo": "Monitoramento da Saúde Dental:",
+        "texto": "Registre e acompanhe tudo sobre os dentes da galera. Exames, procedimentos, recomendações do dentista - tudo organizadinho para você."
+      },
+      {
+        "titulo": "Acompanhamento da Dentição:",
+        "texto": "Não perca nenhum dente de leite nem a emocionante fase da dentição definitiva. Temos dicas personalizadas para cada etapa, porque cada sorriso é único."
+      },
+      {
+        "titulo": "Calendário Molar:",
+        "texto": "Esqueça a confusão! Nosso calendário vai lembrar você dos cuidados essenciais, como trocar a escova, usar fio dental e marcar as visitas ao dentista. É o assistente pessoal que seu sorriso merece."
+      },
+      {
+        "titulo": "Dicas Maravilhosas:",
+        "texto": "De higiene bucal a dietas amigas dos dentes, vamos encher sua cabeça (e a dos seus filhos) com conhecimentos bacanas. Escovar os dentes nunca foi tão divertido!"
+      }
+    ],
+    "tituloRequisitos": "Requisitos que estamos trabalhando:",
+    "requisitos": [
+      {
+        "titulo": "Design que se Adapta:",
+        "texto": "Nosso site é como um camaleão digital, se adapta a qualquer tela! Desktop, tablet, smartphone - todos merecem uma experiência top."
+      },
+      {
+        "titulo": "Fácil como Chiclete:",
+        "texto": "Navegação simples e intuitiva para você não se perder nem entre os dentes. Todos vão curtir, dos mais novos aos mais sábios."
+      },
+      {
+        "titulo": "Segurança de Primeira:",
+        "texto": "Suas informações estão mais seguras do que o baú do tesouro. Criptografia e controle de acesso garantem que seus dados fiquem só entre nós."
+      },
+      {
+        "titulo": "Sorrisos Informados:",
+        "texto": "Conteúdo educativo fresquinho, baseado nas dicas dos melhores dentistas. Informação é poder, e poder sorrir é incrível!"
+      }
+    ]
+  }
+  
