@@ -7,16 +7,17 @@
     align-items: center;
     
 }
-.container__Geral h2{
+.tituloRequisitos{
+    color: $corPrimaria;
     font-family: $fontDestaque;
     font-size: 1.5rem;
     font-weight: 700;
 }
-.tituloRequisitos{
-    color: $corPrimaria;
-}
 .tituloFuncionalidade{
     color: $corSecundaria;
+    font-family: $fontDestaque;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .card{
     width: 15.94rem;   
@@ -29,7 +30,7 @@
     text-align: center;
     line-height: 1rem;
 }
-.card h3{
+.tituloCard{
     color: $branco100;
     font-weight: 700;
     background-color: $corSecundaria;
@@ -42,7 +43,7 @@
     align-items: center;
     justify-content: center;
 }
-.card p{
+.textoCard{
     font-weight: 500;
     color: $corTexto;
     margin: 1rem 1rem 0 1rem;
@@ -50,7 +51,7 @@
 .cardRequisitos{
     border: 0.12rem solid $corPrimaria;
 }
-.cardRequisitos h3{
+.cardRequisitos .tituloCard{
     background-color: $corPrimaria;
 }
 .tituloRequisitos{

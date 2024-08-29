@@ -40,8 +40,8 @@ export const BlockCardSaibaMais = ({ tituloBlock, funcionalidadeRequisitos, isRe
                     key={index}
                 >
 
-                    <h3>{funcionalidadeRequisitos.titulo}</h3>
-                    <p>{funcionalidadeRequisitos.texto}</p>
+                    <h3 className={styles.tituloCard} >{funcionalidadeRequisitos.titulo}</h3>
+                    <p className={styles.textoCard}>{funcionalidadeRequisitos.texto}</p>
                 </div>
             ))}
         </div>
