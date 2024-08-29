@@ -1,0 +1,19 @@
+@use "styles/variables" as *;
+
+.container{
+  margin: 18px 39px 24px 39px;
+}
+
+.subtitle{
+  font-weight: 700;
+  font-family: $fontDestaque;
+  font-size: 26px;
+  line-height: 33px;
+  color: $corPrimaria;
+}
+
+.desc{
+  font-size: 12px;
+  line-height: 16px;
+  margin: 9px 0 24px 0;
+}
