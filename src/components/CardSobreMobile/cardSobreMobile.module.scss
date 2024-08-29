@@ -3,11 +3,11 @@
 .container {
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: space-between;
   width: 281px;
   height: 105px;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 0;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 
   .containerInfo{
