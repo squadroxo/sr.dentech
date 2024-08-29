@@ -1,0 +1,72 @@
+@use "styles/variables" as *;
+
+.container__Geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tituloRequisitos{
+    color: $corPrimaria;
+    font-family: $fontDestaque;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.tituloFuncionalidade{
+    color: $corSecundaria;
+    font-family: $fontDestaque;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card{
+    width: 15.94rem;   
+    height: 12.14rem;
+    border: 0.12rem solid $corSecundaria;
+    border-radius: 2.05rem;
+    margin-top: 1rem;
+    font-family: $fontPrimaria;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 1rem;
+}
+.tituloCard{
+    color: $branco100;
+    font-weight: 700;
+    background-color: $corSecundaria;
+    width: 15.91rem;
+    height: 3.86rem; 
+    padding: 0.41rem 0 0 0; 
+    gap: 0.41rem;
+    border-radius: 2.05rem 2.05rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textoCard{
+    font-weight: 500;
+    color: $corTexto;
+    margin: 1rem 1rem 0 1rem;
+}
+.cardRequisitos{
+    border: 0.12rem solid $corPrimaria;
+}
+.cardRequisitos .tituloCard{
+    background-color: $corPrimaria;
+}
+.tituloRequisitos{
+    color: $corPrimaria;
+}
+.imagemFuncionalidade{
+    width: 5.69rem;
+    height: 5.45rem;
+    position: relative;
+    top: 2.5rem;
+    left: 5rem;
+}
+.imagemRequisitos{
+    width: 17.81rem;   
+    height: 6.1rem;    
+    margin-top: 2rem;
+
+}
