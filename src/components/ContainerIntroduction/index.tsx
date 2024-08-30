@@ -18,8 +18,7 @@ const ContainerIntroduction: React.FC = () => {
                 Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.</p>
                 </div>
                 <ComponentButton
-                    link='/saiba-mais' 
-                    target="_blank"
+                    link='/saiba-mais'
                     label="Saiba mais"
                     className={style.btSaibaMais}
                     labelClassName={style.labelSaibaMais}
