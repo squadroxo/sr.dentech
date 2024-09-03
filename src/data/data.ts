@@ -167,7 +167,7 @@ const dataCards: dataCardSobreProps[] = [
     cardDesc:
       "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas regulares ao dentista!",
     photo: "assets/senhora-1.png",
-    alt: "Foto de um mulher sorrindo",
+    alt: "Foto de uma mulher sorrindo",
     primary: true,
     photoDivision: "assets/tracado.svg",
     descMobile: "Dicas de saúde bucal para adultos"
@@ -286,7 +286,7 @@ const dataCards: dataCardSobreProps[] = [
       },
     ],
     photo: "assets/crianca-2.png",
-    alt: "Foto de uma criança sorrindo",
+    alt: "Menino sorrindo",
     primary: true,
     photoDivision: "assets/tracado.svg",
     cardDesc: "Dicas de saúde bucal para adultos"
@@ -344,7 +344,7 @@ const dataCards: dataCardSobreProps[] = [
       },
     ],
     photo: "assets/crianca-3.png",
-    alt: "Foto de uma criança escovand os dentes",
+    alt: "Menina escovando os dentes",
     primary: false,
     photoDivision: "assets/pontilhado.svg",
     cardDesc: "Como fazer as crianças adorarem escovar os dentes"
@@ -400,7 +400,7 @@ const dataCards: dataCardSobreProps[] = [
       },
     ],
     photo: "assets/crianca-4.png",
-    alt: "Foto de uma criança escovand os dentes",
+    alt: "Menino sorrindo no espelho",
     primary: true,
     photoDivision: "assets/tracado.svg",
     cardDesc: "Alimentos que ajudam a proteger os dentes"
@@ -452,7 +452,7 @@ const dataCards: dataCardSobreProps[] = [
     ],
 
     photo: "assets/crianca-5.png",
-    alt: "Foto de uma criança escovand os dentes",
+    alt: "Foto de uma menina passando fio dental",
     primary: false,
     photoDivision: "assets/pontilhado.svg",
     cardDesc: "Quando e como introduzir esse hábito"
@@ -511,7 +511,7 @@ const dataCards: dataCardSobreProps[] = [
     ],
 
     photo: "assets/familia-1.png",
-    alt: "Foto de uma criança escovand os dentes",
+    alt: "Foto de uma familia escovando os dentes",
     primary: true,
     photoDivision: "assets/tracado.svg",
     cardDesc: "Como criar uma rotina saudável juntos"
