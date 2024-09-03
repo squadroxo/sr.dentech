@@ -183,8 +183,10 @@
         }
     
         .containerSobre {
-            width: 100%;
+            width: 80%;
             height: auto;
+            margin-top: 180px;
+            margin-left: 9%;
         }
     
         .containerSobre .tituloSobre {
@@ -196,27 +198,33 @@
     
         .containerSobre .textoSobre {
             width: 100%;
+            height: auto;
             font-size: 14px;
             line-height: 22px;
             text-align: center;
+            //margin-bottom: 10px;
         }
     
         .containerMeio {
             flex-direction: column;
             align-items: center;
+           // margin-top: 0px;
+            margin-left: 9%;
         }
     
         .containerMeio .imagemSobreNos {
             width: 250px;
             height: 250px;
-            margin-top:150px;
+            position:absolute;
+            top:185%;
         }
     
 
     
         .missao, .visao, .valores {
-            width: 100%;
+            width: 80%;
             height: auto;
+            
         }
     
         .objetivo .missao h1, .visao h1, .valores h1 {
@@ -231,13 +239,15 @@
             line-height: 22px;
             text-align: center;
            // margin-bottom: 49px;
+           
         }
     
         .equipe {
-            width: 100%;
+            width: 80%;
             height: auto;
-            text-align: center;
-            
+            position: absolute;
+            top: 340%;
+            left: 9%;
         }
     
         .equipeTitulo {
@@ -256,7 +266,9 @@
             width: 160px;
             height: 48px;
             padding: 10px;
-            //margin: 48px 0;
+            margin-left: 65px;
+            margin-top: 110px;
+            
         }
     
         .labelEquipe {
@@ -265,7 +277,11 @@
         }
         .equipeContato a{
             font-size: 14px;
-            
+        }
+        .equipeContato{
+            position: absolute;
+            top: 50%;
+            left: 8%;
         }
     }
     
