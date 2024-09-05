@@ -169,103 +169,114 @@
 }
     @media screen and (min-width: 360px) and (max-width: 425px) {
         .wrapper {
-            height: 2025px;
-            margin: 0 40px 0 40px ;
+            height: auto;
             border-radius: 15px;
             width: 100%;
-            justify-content: flex-start;
+            display: flex;
+            align-items: center;
+            justify-content: Center;
+            text-align: center;
+            padding-left: 50px;
+            
         }
     
         .containerGeral {
             width: 100%;
-            //padding-top: 20px;
             height: auto;
         }
     
         .containerSobre {
             width: 100%;
             height: auto;
+            margin-top: 150px;
+            
+          
         }
     
         .containerSobre .tituloSobre {
             font-size: 20px;
             line-height: 45px;
-           // margin-bottom: 16px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding-right: 45px;
+         
+           
         }
     
         .containerSobre .textoSobre {
-            width: 100%;
+            width: 80%;
+            height: auto;
             font-size: 14px;
             line-height: 22px;
-            text-align: center;
         }
     
         .containerMeio {
             flex-direction: column;
-            align-items: center;
         }
     
         .containerMeio .imagemSobreNos {
             width: 250px;
             height: 250px;
-            margin-top:150px;
+            position:absolute;
+            top:185%;
         }
     
 
     
         .missao, .visao, .valores {
-            width: 100%;
+            width: 80%;
             height: auto;
+            
         }
     
         .objetivo .missao h1, .visao h1, .valores h1 {
             font-size: 20px;
             line-height: 28px;
-            margin-bottom: 16px;
-            text-align: center;
         }
     
         .objetivo .missao p, .visao p, .valores ul {
             font-size: 14px;
             line-height: 22px;
             text-align: center;
-           // margin-bottom: 49px;
+           
         }
     
         .equipe {
-            width: 100%;
+            width: 80%;
             height: auto;
-            text-align: center;
-            
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
         }
     
         .equipeTitulo {
             font-size: 20px;
-            //  margin-bottom: 15px;
             text-align: center;
         }
     
         .equipeTexto, .equipeContato {
             font-size: 14px;
             line-height: 22px;
-            text-align: center;
         }
     
         .btEquipe {
             width: 160px;
             height: 48px;
             padding: 10px;
-            //margin: 48px 0;
+                
+            
         }
-    
         .labelEquipe {
             font-size: 14px;
             line-height: 22.32px;
         }
         .equipeContato a{
             font-size: 14px;
-            
+        }
+        .equipeContato{
+           position: absolute;
+           top: 347%;
         }
     }
     
