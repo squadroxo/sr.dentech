@@ -80,7 +80,6 @@ function ContainerSobreNos() {
             <ComponentButton
               link="https://pipoca-agil-apresentacao.vercel.app"
               target="_blank"
-              onClick={() => console.log("Botão clicado!")}
               label="Nossa Equipe"
               className={style.btEquipe}
               labelClassName={style.labelEquipe}
@@ -183,7 +182,6 @@ function ContainerSobreNos() {
               <ComponentButton
                 link="https://pipoca-agil-apresentacao.vercel.app"
                 target="_blank"
-                onClick={() => console.log("Botão clicado!")}
                 label="Nossa Equipe"
                 className={style.btEquipeMobile}
                 labelClassName={style.labelEquipeMobile}

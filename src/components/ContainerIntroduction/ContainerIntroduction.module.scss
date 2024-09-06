@@ -4,70 +4,50 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    margin: 0px 320px 0px 320px;
+    height: auto;
+    margin: 3.5rem 0 8.5rem 0;
 
 }
 
 .container1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.containerTexto {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-
-.container2 h1 {
+.containerTitulo {
     font-family: $fontDestaque;
     font-size: 48px;
     font-weight: 700;
     color: $corPrimaria;
-    width: 505px;
-    height: 59px;
-    position: relative;
-    top: 130px;
-    right: 450px;
-
 }
 
-.container1 p {
-    width: 505px;
-    height: 66px;
-    position: relative;
-    top: 190px;
-    left: 61px;
+.containerDescricao {
     font-family: $fontPrimaria;
     font-size: 18px;
-
+    padding-top: 1rem;
 }
 
-.container1 span {
+.containerDescricao span {
     font-weight: 700;
 }
 
-.container2 img {
-    width: 739px;
-    height: 444px;
-    position: relative;
-    left: 65px;
-
+.imagemCrianca{
+    width: 46rem;
+    height: 28rem;
 }
 
 .btSaibaMais {
-    width: 335px;
-    height: 50px;
-    position: relative;
-    top: 170px;
-    left: 61px;
-    padding: 10px;
+    width: 21rem;
+    height: 3.12rem;
+    padding: 0.6rem;
+    margin-top: 2.5rem;
     gap: 10px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
     background-color: $corTerciaria;
-    margin-bottom: 276px;
     transition: transform 0.1s ease, background-color 0.1s ease;
 
     &:hover {
@@ -80,9 +60,8 @@
     font-family: $fontDestaque;
     font-size: 20px;
     font-weight: 700;
-    width: 97px;
-    height: 32px;
     color: $branco100;
+    
 }
 .containerIntroductionMobile{
     display: none;
@@ -95,12 +74,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 18px 0px 28px 0px;
+        margin: 1.12rem 0 1.75rem 0;
     }
     .imagemMobile{
-        width: 278px;
-        height: 167px;
-        margin: 6px 0 8px 0;
+        width: 17.375rem;
+        height: 10.4375rem;
+        margin: 0.3rem 0 0.5rem 0;
     }
     .tituloMobile{
         font-family: $fontDestaque;
@@ -123,7 +102,7 @@
     }
     .btSaibaMaisMobile{
         background-color:$corTerciaria;
-        padding: 7px 41px;
+        padding: 0.4rem 2.5rem;
         border-radius: 30px;
         gap: 10px;
         text-decoration: none;
