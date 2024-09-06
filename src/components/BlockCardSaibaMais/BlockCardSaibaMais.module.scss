@@ -30,7 +30,7 @@
     text-align: center;
     line-height: 1rem;
     border-top-left-radius: 2.24rem;
-    border-top-right-radius: 2.24rem;
+    border-top-right-radius: 2.24rem;   
    
 }
 .tituloCard{
@@ -45,6 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
 }
 .textoCard{
@@ -60,6 +61,7 @@
 }
 .tituloRequisitos{
     color: $corPrimaria;
+    margin:18px 40px 32px 40PX;
 }
 .imagemFuncionalidade{
     width: 5.69rem;
