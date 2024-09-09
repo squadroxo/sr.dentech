@@ -61,7 +61,12 @@
 }
 .tituloRequisitos{
     color: $corPrimaria;
-    //margin:18px 40px 32px 40PX;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    background-color: red;
 }
 .imagemFuncionalidade{
     width: 5.69rem;
