@@ -9,7 +9,7 @@ interface FuncionalidadeRequisitosProps {
 interface BlockCardSaibaMaisProps {
     tituloBlock: string;
     funcionalidadeRequisitos: FuncionalidadeRequisitosProps[];
-    isRequisitos?: boolean; 
+    isRequisitos?: boolean;
 }
 
 export const BlockCardSaibaMais = ({ tituloBlock, funcionalidadeRequisitos, isRequisitos }: BlockCardSaibaMaisProps) => {
@@ -24,9 +24,13 @@ export const BlockCardSaibaMais = ({ tituloBlock, funcionalidadeRequisitos, isRe
                     />
                 )
             }
-            <h2 className={isRequisitos ? styles.tituloRequisitos : styles.tituloFuncionalidade}>
-                {tituloBlock}
-            </h2>            
+            <div className={styles.divTitulo}>
+                <h2 className={isRequisitos ? styles.tituloRequisitos : styles.tituloFuncionalidade}>
+                    {tituloBlock}
+
+                </h2>
+            </div>
+
             {!isRequisitos && (
                 <img
                     src={DenteSorrindoSegurandoEscova}
@@ -35,11 +39,10 @@ export const BlockCardSaibaMais = ({ tituloBlock, funcionalidadeRequisitos, isRe
                 />
             )}
             {funcionalidadeRequisitos.map((funcionalidadeRequisitos, index) => (
-               <div
+                <div
                     className={`${styles.card} ${isRequisitos ? styles.cardRequisitos : ""}`}
                     key={index}
                 >
-
                     <h3 className={styles.tituloCard} >{funcionalidadeRequisitos.titulo}</h3>
                     <p className={styles.textoCard}>{funcionalidadeRequisitos.texto}</p>
                 </div>

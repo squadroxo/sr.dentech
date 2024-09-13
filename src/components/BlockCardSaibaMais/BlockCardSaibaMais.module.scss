@@ -12,12 +12,19 @@
     font-family: $fontDestaque;
     font-size: 1.5rem;
     font-weight: 700;
+    width: 70%;
+
 }
 .tituloFuncionalidade{
     color: $corSecundaria;
     font-family: $fontDestaque;
     font-size: 1.5rem;
     font-weight: 700;
+}
+.divTitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card{
     width: 15.94rem;   
@@ -55,6 +62,7 @@
 .cardRequisitos{
     border: 0.12rem solid $corPrimaria;
 }
+
 .cardRequisitos .tituloCard{
     background-color: $corPrimaria;
 }
