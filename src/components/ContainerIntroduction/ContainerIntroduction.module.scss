@@ -4,70 +4,50 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    margin: 0px 320px 0px 320px;
+    height: auto;
+    margin: 3.5rem 0 8.5rem 0;
 
 }
 
 .container1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.containerTexto {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-
-.container2 h1 {
+.containerTitulo {
     font-family: $fontDestaque;
     font-size: 48px;
     font-weight: 700;
     color: $corPrimaria;
-    width: 505px;
-    height: 59px;
-    position: relative;
-    top: 130px;
-    right: 450px;
-
 }
 
-.container1 p {
-    width: 505px;
-    height: 66px;
-    position: relative;
-    top: 190px;
-    left: 61px;
+.containerDescricao {
     font-family: $fontPrimaria;
     font-size: 18px;
-
+    padding-top: 1rem;
 }
 
-.container1 span {
+.containerDescricao span {
     font-weight: 700;
 }
 
-.container2 img {
-    width: 739px;
-    height: 444px;
-    position: relative;
-    left: 65px;
-
+.imagemCrianca{
+    width: 46rem;
+    height: 28rem;
 }
 
 .btSaibaMais {
-    width: 335px;
-    height: 50px;
-    position: relative;
-    top: 170px;
-    left: 61px;
-    padding: 10px;
+    width: 21rem;
+    height: 3.12rem;
+    padding: 0.6rem;
+    margin-top: 2.5rem;
     gap: 10px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
     background-color: $corTerciaria;
-    margin-bottom: 276px;
     transition: transform 0.1s ease, background-color 0.1s ease;
 
     &:hover {
@@ -80,65 +60,61 @@
     font-family: $fontDestaque;
     font-size: 20px;
     font-weight: 700;
-    width: 97px;
-    height: 32px;
     color: $branco100;
-
-
+    
 }
-
-@media screen and (min-width: 360px) and (max-width: 425px) {
-    .containerIntroduction {
-        flex-direction: column-reverse;
-        //margin: 0px 0 28px 0;
+.containerIntroductionMobile{
+    display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .containerIntroduction{
+        display: none;
+    }
+    .containerIntroductionMobile{
+        display: flex;
         align-items: center;
+        flex-direction: column;
+        margin: 1.12rem 0 1.75rem 0;
     }
-
-
-    .container2 h1 {
-        width: 267px;
-        height: 33px;
+    .imagemMobile{
+        width: 17.375rem;
+        height: 10.4375rem;
+        margin: 0.3rem 0 0.5rem 0;
+    }
+    .tituloMobile{
+        font-family: $fontDestaque;
         font-size: 26px;
-        line-height: 41.44px;
-        text-align: center;
-        //padding: 18px 48px 5.8px 45px;
-        position: relative;
-        top: 18px;
-        left: 20px;
-        z-index: 1;
+        font-weight: 700;
+        color: $corPrimaria;
+        line-height: 42px;
     }
-
-    .container1 p {
-        width: 287px;
-        height: 60px;
-        position: relative;
-        top: 43px;
-        left: 5px;
-        text-align: center;
+    .textoMobile{
+        font-family: $fontPrimaria;
         font-size: 14px;
+        color:$corTexto;
+        font-weight: 400;
         line-height: 20px;
+        text-align: center;
+        width: 80%;
     }
-
-    .container2 img {
-        width: 277.94px;
-        height: 166.72px;
-        position: relative;
-        top: 35px;
-        left: 10px;
+    .textoMobile span{
+        font-weight: 700;
     }
-
-    .btSaibaMais {
-        width: 160px;
-        height: 40px;
-        //margin: 18px 102px 28px 98px;
-        position: relative;
-        top: 45px;
+    .btSaibaMaisMobile{
+        background-color:$corTerciaria;
+        padding: 0.4rem 2.5rem;
+        border-radius: 30px;
+        gap: 10px;
+        text-decoration: none;
+        border: none;
+        margin-top: 18px;
     }
-
-    .labelSaibaMais {
+    .labelSaibaMaisMobile{
         font-size: 16px;
-        width: 78px;
-        line-height: 25.5px;
-        margin: 7px 0 7px 0;
+        font-weight: 700;
+        color: $branco100;
+        font-family: $fontDestaque;
+        line-height: 25px;
     }
+    
 }
