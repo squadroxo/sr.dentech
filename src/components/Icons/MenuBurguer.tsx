@@ -11,7 +11,6 @@ export const MenuBurguer = () => {
           <rect width="30" height="2" rx="1" fill="white" />
           <rect y="6" width="30" height="2" rx="1" fill="white" />
           <rect y="12" width="30" height="2" rx="1" fill="white" />
-          <rect y="18" width="30" height="2" rx="1" fill="white" />
         </g>
         <defs>
           <clipPath id="clip0_412_3567">
