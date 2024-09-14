@@ -15,7 +15,12 @@
     justify-content: center;
     cursor: pointer;
 
-    
+    //&__img {
+      // width: 157px;
+      // height: 133.74px;
+      // margin-top: 21.35px;
+      // left: 24.77px;
+   // }
   }
 
   .containerLinks {
@@ -73,5 +78,10 @@
       }
       
     }
+    .iconClosed{
+      width: 2.5rem;
+      height: 3rem;
+    } 
   }
+  
 }
