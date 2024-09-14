@@ -5,7 +5,7 @@
   import { useState } from "react";
   import { MenuMobile } from "../MenuMobile";
   import { MenuBurguer } from "../Icons/MenuBurguer";
-  import { AnimatePresence, motion } from "framer-motion"
+  import { AnimatePresence } from "framer-motion"
   import iconClosed from "../../assets/iconClosed.svg";
   export const Header = () => {
     const navigate = useNavigate();
