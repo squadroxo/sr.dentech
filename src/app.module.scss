@@ -4,3 +4,8 @@
   background-color: $corSecundaria;
   max-width: 100%;
 }
+@media screen and (max-width: 500px) {
+  .containerFooter{
+    background-color: $background;
+  }
+}
