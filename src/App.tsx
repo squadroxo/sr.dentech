@@ -18,10 +18,7 @@ const App: React.FC = () => {
           <Route path="/construcao" element={<ConstrucaoPage />}/>
           <Route path="/saiba-mais" element={<SaibaMaisPage />}/>
         </Routes>
-        <div className={styles.containerFooter}>
-          <Footer />
-         
-        </div>
+        
     </BrowserRouter>
   );
 };
