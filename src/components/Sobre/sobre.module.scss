@@ -11,4 +11,36 @@
     color: $corSecundaria;
     margin-bottom: 70px;
   }
+  
+  .containerMobile{
+    display: none;
+  }
+
+  .linhaDivisoria{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container{
+
+    .linhaDivisoria{
+      display: block;
+      margin: 11px 0 32px 0;
+    }
+
+    &__titulo{
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .containerMobile{
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 64px;
+    }
+  }
 }

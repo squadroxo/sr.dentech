@@ -165,5 +165,83 @@
     font-size: 20px;
     line-height: 31.88px;
     color:$branco100;
-
 }
+.wrapperMobile{
+    display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 425px) {
+        .wrapper {
+            display: none;
+        }
+        .wrapperMobile{
+            display: flex;
+            align-items: center;
+            margin: 0 0 65px 45px;
+        }
+        .imagemSobreNosMobile{
+            width: 250px;
+            height: 250px;
+        }
+        .textoMobile{
+            width: 80%;
+        }
+        .tituloSobreMobile, .tituloMissaoMobile, .tituloVisaoMobile, .tituloValoresMobile, .tituloEquipeMobile{
+            font-weight: 700;
+            font-size: 20px;
+            color: $corPrimaria;
+            font-family: $fontDestaque;
+            line-height: 22px;
+            text-align: center;
+            margin: 48px 0 16px 0;
+        }
+        .textoSobreMobile, .textoMissaoMobile, .textoVisaoMobile, .textoValoresMobile, .textoEquipeMobile{
+            font-family: $fontPrimaria;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            color: $branco90;
+            text-align: center;
+        }
+        .equipeContatoMobile{
+            font-family: $fontPrimaria;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+            color: $branco90;
+            margin: 16px 0 45px 0;
+           
+        }
+        .equipeContatoMobile a{
+            font-weight: 700;
+            line-height: 22px;
+            text-decoration: none;
+            color: $branco90;
+        }
+        .btEquipeMobile{
+            border-radius: 30px;
+            padding: 13px 40px;
+            text-decoration: none;
+            border: none;
+            background-color: $corPrimaria;
+            gap: 10px;
+            margin-left: 45px;
+            cursor: pointer;
+            transition: transform 0.1s ease, background-color 0.1s ease;
+            
+        }
+        .btEquipeMobile:hover {
+            background-color: $corTerciaria;
+            transform: scale(1.05);
+        }  
+
+        .labelEquipeMobile{
+            font-family: $fontDestaque;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 23px;
+            color:$branco100;
+        }
+    
+      
+    }
+    

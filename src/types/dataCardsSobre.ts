@@ -12,13 +12,15 @@ type infosCardsProps = {
 
 export type dataCardSobreProps = {
   id: string,
-  tituloCard: string,
-  subtituloCard?: string,
-  descricaoCard: string,
+  titleCard: string,
+  slug: string,
+  subtitleCard?: string,
+  descCard: string,
   infosCards: infosCardsProps[],
-  foto: string,
+  photo: string,
   cardDesc?: string,
   alt: string,
-  primario: boolean,
-  fotoSeparacao: string
+  primary: boolean,
+  photoDivision: string,
+  descMobile?: string
 };

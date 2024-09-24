@@ -7,7 +7,6 @@
   display: flex;
   gap: 42px;
   align-items: flex-start;
-
   &__foto {
     width: 542px;
     height: 577px;
@@ -90,5 +89,11 @@
         color: $branco100;
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container {
+    display: none;
   }
 }
