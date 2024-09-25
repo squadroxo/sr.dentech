@@ -7,11 +7,16 @@ import { MenuMobile } from "../MenuMobile";
 import { MenuBurguer } from "../Icons/MenuBurguer";
 import { AnimatePresence, motion } from "framer-motion";
 import iconClosed from "../../assets/iconClosed.svg";
+import { IoMdClose } from "react-icons/io";
 
 export const Header = () => {
   const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
+
+  function toggleIsOpen() {
+    setIsOpen(previewValue => !previewValue)
+  }
 
   return (
     <header className={styles.container}>
@@ -27,17 +32,7 @@ export const Header = () => {
         <AnimatePresence>
           {isOpen && <MenuMobile />}
         </AnimatePresence>
-        <button onClick={() => setIsOpen(pv => !pv)} className={styles.iconMenu}>
-          {isOpen ? (
-            <>
-              <img className={styles.iconClosed} src={iconClosed} alt="icon closed menubar" />
-            </>
-          ) : (
-            <>
-              <MenuBurguer />
-            </>
-          )}
-        </button>
+          {isOpen ? <IoMdClose onClick={toggleIsOpen} size={30} color="white"/> : <MenuBurguer height="20" width="30" onClick={toggleIsOpen}/>}
       </nav>
     </header>
   )
