@@ -6,7 +6,6 @@ import { useState } from "react";
 import { MenuMobile } from "../MenuMobile";
 import { MenuBurguer } from "../Icons/MenuBurguer";
 import { AnimatePresence, motion } from "framer-motion";
-import iconClosed from "../../assets/iconClosed.svg";
 import { IoMdClose } from "react-icons/io";
 
 export const Header = () => {
@@ -29,10 +28,13 @@ export const Header = () => {
             <li key={link.id}><a href={link.href} className={styles.containerLinks__lista__item}>{link.texto}</a></li>
           ))}
         </ul>
-        <AnimatePresence>
-          {isOpen && <MenuMobile />}
-        </AnimatePresence>
-          {isOpen ? <IoMdClose onClick={toggleIsOpen} size={30} color="white"/> : <MenuBurguer height="20" width="30" onClick={toggleIsOpen}/>}
+        <div className={styles.containerHamburguer}>
+          <AnimatePresence>
+            {isOpen && <MenuMobile />}
+          </AnimatePresence>
+          {isOpen ? <IoMdClose onClick={toggleIsOpen} size={30} color="white" /> : <MenuBurguer height="20" width="30" onClick={toggleIsOpen} />}
+        </div>
+
       </nav>
     </header>
   )

@@ -1,6 +1,6 @@
 @use "styles/variables" as *;
 
-.container__Geral{
+.containerGeral{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,14 +21,22 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
-.divTitulo{
+.divTituloFuncionalidade{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.divTituloRequisitos{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:2rem ;
+}
 .card{
-    width: 15.94rem;   
-    height: 12.14rem;
+    width: 15rem;   
+    height: 12rem;
     border: 0.12rem solid $corSecundaria;
     border-radius: 2.05rem;
     margin-top: 1rem;
@@ -44,7 +52,7 @@
     color: $branco100;
     font-weight: 700;
     background-color: $corSecundaria;
-    width: 15.91rem;
+    width: 100%;
     height: 3.86rem; 
     padding: 0.41rem 0.1rem 0 0; 
     gap: 0.41rem;
@@ -81,4 +89,97 @@
     height: 6.1rem;    
     margin-top: 2rem;
 
+}
+.imagemDesktopRequisitos{
+    display: none;
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    .containerGeral{
+        width: 55rem;
+
+    }
+    .cardConteudoRequisitos{
+        display: flex;
+        gap: 1.4rem;
+    }
+
+    .cardRequisitos{
+        width: 12rem;
+        height: 13rem;
+       
+    }
+    .cardRequisitos .tituloCard{
+        width: 12rem;
+        height: 4.1rem;
+    }
+    
+    .imagemRequisitos{
+        display: none;
+    }
+    .imagemDesktopRequisitos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .tracado{
+        width: 27rem;
+        height: 1.1rem;
+    }
+    
+    .divTituloRequisitos{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        
+    }
+    .divTituloFuncionalidade{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .tituloFuncionalidade{
+        font-size: 2.2rem;
+        margin-bottom: 1.3rem;
+
+    }
+    .imagemFuncionalidade{
+        width: 12.5rem;
+        height: 12rem;
+        
+    }
+    .cardConteudoFuncionalidade {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;  
+    
+        .card {
+            width: 17rem; 
+            height: 13rem;
+            line-height: 1rem;
+            font-size: 0.875rem;
+        }
+    
+        .card:nth-child(4),
+        .card:nth-child(5) {
+            width: 26rem; 
+            height: 13rem;
+            
+        }
+        
+    }
+    
+    
 }
