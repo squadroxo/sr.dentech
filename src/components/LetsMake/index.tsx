@@ -1,5 +1,4 @@
 import line from "../../assets/line.png";
-import styles from "./LetsMake.module.scss";
 import * as Style from "./styles";
 
 export const LetsMake = () => {
