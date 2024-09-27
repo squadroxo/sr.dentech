@@ -28,7 +28,7 @@ export const BlockCardSaibaMais = ({ tituloBlock, funcionalidadeRequisitos, isRe
                     </h2>
 
                     <div className={styles.imagemDesktopRequisitos}>
-                        {isRequisitos && width >= 1280 && width <= 1920 && (
+                        {isRequisitos && width >= 1199 && width <= 1921 && (
                             <>
                                 <img
                                     className={styles.DenteSorrindoDesktop}

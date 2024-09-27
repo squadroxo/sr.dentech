@@ -1,13 +1,14 @@
 @use "styles/variables" as *;
 
-.containerGeral{
+.containerGeral {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-.tituloRequisitos{
+
+.tituloRequisitos {
     color: $corPrimaria;
     font-family: $fontDestaque;
     font-size: 1.5rem;
@@ -15,27 +16,31 @@
     width: 70%;
 
 }
-.tituloFuncionalidade{
+
+.tituloFuncionalidade {
     color: $corSecundaria;
     font-family: $fontDestaque;
     font-size: 1.5rem;
     font-weight: 700;
 }
-.divTituloFuncionalidade{
+
+.divTituloFuncionalidade {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.divTituloRequisitos{
+
+.divTituloRequisitos {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    padding-bottom:2rem ;
+    padding-bottom: 2rem;
 }
-.card{
-    width: 15rem;   
+
+.card {
+    width: 15rem;
     height: 12rem;
     border: 0.12rem solid $corSecundaria;
     border-radius: 2.05rem;
@@ -46,102 +51,116 @@
     line-height: 1rem;
     border-top-left-radius: 2.24rem;
     border-top-right-radius: 2.24rem;
-   
+
 }
-.tituloCard{
+
+.tituloCard {
     color: $branco100;
     font-weight: 700;
     background-color: $corSecundaria;
     width: 100%;
-    height: 3.86rem; 
-    padding: 0.41rem 0.1rem 0 0; 
+    height: 3.86rem;
+    padding: 0.41rem 0.1rem 0 0;
     gap: 0.41rem;
     border-radius: 2.05rem 2.05rem 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.textoCard{
+
+.textoCard {
     font-weight: 500;
     color: $corTexto;
     margin: 1rem 1rem 0 1rem;
 }
-.cardRequisitos{
+
+.cardRequisitos {
     border: 0.12rem solid $corPrimaria;
 }
 
-.cardRequisitos .tituloCard{
+.cardRequisitos .tituloCard {
     background-color: $corPrimaria;
 }
-.tituloRequisitos{
+
+.tituloRequisitos {
     color: $corPrimaria;
 }
-.imagemFuncionalidade{
+
+.imagemFuncionalidade {
     width: 5.69rem;
     height: 5.45rem;
     position: relative;
     top: 2.5rem;
     left: 5rem;
 }
-.imagemRequisitos{
-    width: 17.81rem;   
-    height: 6.1rem;    
+
+.imagemRequisitos {
+    width: 17.81rem;
+    height: 6.1rem;
     margin-top: 2rem;
 
 }
-.imagemDesktopRequisitos{
+
+.imagemDesktopRequisitos {
     display: none;
 }
+
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
-    .wrapper{
+    .wrapper {
         display: flex;
         justify-content: center;
-        
+
 
     }
-    .containerGeral{
+
+    .containerGeral {
         width: 55rem;
 
     }
-    .cardConteudoRequisitos{
+
+    .cardConteudoRequisitos {
         display: flex;
         gap: 1.4rem;
     }
 
-    .cardRequisitos{
+    .cardRequisitos {
         width: 12rem;
         height: 13rem;
-       
+
     }
-    .cardRequisitos .tituloCard{
+
+    .cardRequisitos .tituloCard {
         width: 12rem;
         height: 4.1rem;
     }
-    
-    .imagemRequisitos{
+
+    .imagemRequisitos {
         display: none;
     }
-    .imagemDesktopRequisitos{
+
+    .imagemDesktopRequisitos {
         display: flex;
         align-items: center;
         justify-content: center;
 
     }
-    .tracado{
+
+    .tracado {
         width: 27rem;
         height: 1.1rem;
     }
-    
-    .divTituloRequisitos{
+
+    .divTituloRequisitos {
         display: flex;
         flex-direction: column-reverse;
         align-items: start;
         justify-content: start;
         width: 100%;
-        
+
     }
-    .divTituloFuncionalidade{
+
+    .divTituloFuncionalidade {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -149,37 +168,166 @@
         justify-content: space-between;
         align-items: end;
     }
-    .tituloFuncionalidade{
+
+    .tituloFuncionalidade {
         font-size: 2.2rem;
         margin-bottom: 1.3rem;
 
     }
-    .imagemFuncionalidade{
+
+    .imagemFuncionalidade {
         width: 12.5rem;
         height: 12rem;
-        
+
     }
+
     .cardConteudoFuncionalidade {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 1rem;  
-    
+        gap: 1rem;
+
         .card {
-            width: 17rem; 
+            width: 17rem;
             height: 13rem;
             line-height: 1rem;
             font-size: 0.875rem;
         }
-    
+
         .card:nth-child(4),
         .card:nth-child(5) {
-            width: 26rem; 
+            width: 26rem;
             height: 13rem;
-            
+
         }
+
+    }
+
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .containerGeral {
+        width: 80rem;
+        
+
+    }
+
+    .cardConteudoRequisitos {
+        display: flex;
+        gap: 2rem;   
+        
+        
         
     }
+
+    .cardRequisitos {
+        width: 17rem;   
+        height: 20rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        
+    }
+
+    .cardRequisitos .tituloCard {
+        width: 100%;    
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        
+        
+    }
+    .cardRequisitos .textoCard{
+        padding-top: 1.8rem;
+    } 
     
-    
+    .imagemRequisitos {
+        display: none;
+    }
+
+    .imagemDesktopRequisitos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .tracado {
+        width: 37rem;
+        height: 1.6rem;
+    }
+
+    .divTituloRequisitos {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        
+
+    }
+    .tituloRequisitos{
+        font-size: 3rem;
+        line-height: 5rem;
+        
+    }
+
+    .divTituloFuncionalidade {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        justify-content: space-between;
+        align-items: end;
+        
+    }
+
+    .tituloFuncionalidade {
+        font-size: 3rem;
+        line-height: 5rem;
+        margin-bottom: 1.8rem;
+
+    }
+
+    .imagemFuncionalidade {
+        width: 18rem;
+        height: 17rem;
+
+    }
+
+    .cardConteudoFuncionalidade {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.6rem;
+
+        .card {
+            width: 24rem;
+            height: 19rem;
+            line-height: 1.5rem;
+            font-size:1.25rem;
+            
+        }
+        .card .textoCard{
+            margin-top: 1.4rem;
+
+        }
+
+        .card:nth-child(4),
+        .card:nth-child(5) {
+            width: 36rem;
+            height: 18rem;
+
+        }
+        .card:nth-child(4) .textoCard,
+        .card:nth-child(5) .textoCard{
+            margin-top: 2.8rem;
+        }
+
+    }
 }
