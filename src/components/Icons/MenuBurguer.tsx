@@ -1,23 +1,16 @@
 export const MenuBurguer = () => {
   return (
-      <svg
-        width="30"
-        height="20"
-        viewBox="0 0 30 20"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g clipPath="url(#clip0_412_3567)">
-          <rect width="30" height="2" rx="1" fill="white" />
-          <rect y="6" width="30" height="2" rx="1" fill="white" />
-          <rect y="12" width="30" height="2" rx="1" fill="white" />
-          <rect y="18" width="30" height="2" rx="1" fill="white" />
-        </g>
-        <defs>
-          <clipPath id="clip0_412_3567">
-            <rect width="40" height="30" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
+    <svg
+      width="24"
+      height="16"
+      viewBox="0 0 24 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
+        fill="white"
+      />
+    </svg>
   );
 };
