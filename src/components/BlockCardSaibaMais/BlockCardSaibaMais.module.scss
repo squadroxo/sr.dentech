@@ -106,6 +106,17 @@
     display: none;
 }
 
+.cardConteudoRequisitos {
+    border: 2px solid #F0F0F0;
+    border-radius: 32px;
+    padding: 19px 13px;
+}
+.cardConteudoFuncionalidade {
+    border: 2px solid #F0F0F0;
+    border-radius: 32px;
+    padding: 19px 13px;
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
     .wrapper {
         display: flex;
@@ -116,12 +127,14 @@
 
     .containerGeral {
         width: 55rem;
-
+      
     }
 
     .cardConteudoRequisitos {
         display: flex;
         gap: 1.4rem;
+        border-radius: 22px;
+        padding: 32px 53px 32px 32px;
     }
 
     .cardRequisitos {
@@ -185,7 +198,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 1rem;
+        //gap: 1rem;
+        padding: 22px 15px 40px 15px;
 
         .card {
             width: 17rem;
@@ -215,37 +229,39 @@
 
     .containerGeral {
         width: 80rem;
-        
+
 
     }
 
     .cardConteudoRequisitos {
         display: flex;
-        gap: 2rem;   
-        
-        
-        
+        gap: 2rem;
+        border: 2px solid #F0F0F0;
+        border-radius: 30px;
+        padding: 40px 43px 60px 43px;
+
     }
 
     .cardRequisitos {
-        width: 17rem;   
+        width: 17rem;
         height: 20rem;
         font-size: 1.25rem;
         line-height: 1.5rem;
-        
+
     }
 
     .cardRequisitos .tituloCard {
-        width: 100%;    
+        width: 100%;
         font-size: 1.25rem;
         line-height: 1.5rem;
-        
-        
+
+
     }
-    .cardRequisitos .textoCard{
+
+    .cardRequisitos .textoCard {
         padding-top: 1.8rem;
-    } 
-    
+    }
+
     .imagemRequisitos {
         display: none;
     }
@@ -268,13 +284,14 @@
         align-items: start;
         justify-content: start;
         width: 100%;
-        
+
 
     }
-    .tituloRequisitos{
+
+    .tituloRequisitos {
         font-size: 3rem;
         line-height: 5rem;
-        
+
     }
 
     .divTituloFuncionalidade {
@@ -284,7 +301,7 @@
         height: 10%;
         justify-content: space-between;
         align-items: end;
-        
+
     }
 
     .tituloFuncionalidade {
@@ -304,16 +321,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 1.6rem;
+        //gap: 1.6rem;
+        border-radius: 30px;
+        padding: 30px 40px 60px 40px;
 
         .card {
             width: 24rem;
             height: 19rem;
             line-height: 1.5rem;
-            font-size:1.25rem;
-            
+            font-size: 1.25rem;
+
         }
-        .card .textoCard{
+
+        .card .textoCard {
             margin-top: 1.4rem;
 
         }
@@ -324,8 +344,9 @@
             height: 18rem;
 
         }
+
         .card:nth-child(4) .textoCard,
-        .card:nth-child(5) .textoCard{
+        .card:nth-child(5) .textoCard {
             margin-top: 2.8rem;
         }
 
