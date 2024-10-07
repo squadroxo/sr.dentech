@@ -58,7 +58,7 @@ export const Container = styled.div`
     }
 
     .line {
-      width: 38rem;
+      width: 42rem;
       height: 2rem;
       margin-left: 18rem;
     }
