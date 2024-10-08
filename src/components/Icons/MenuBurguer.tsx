@@ -1,8 +1,16 @@
-export const MenuBurguer = () => {
+import { SVGProps } from "react";
+
+type TMenuBurguerProps = SVGProps<SVGSVGElement> & {
+  width: string;
+  height: string;
+}
+
+export const MenuBurguer = ({ width, height, ...rest }:TMenuBurguerProps) => {
   return (
       <svg
-        width="30"
-        height="20"
+        {...rest}
+        width={width}
+        height={height}
         viewBox="0 0 30 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

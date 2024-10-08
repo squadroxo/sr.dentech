@@ -1,105 +1,128 @@
 @use "styles/variables" as *;
 
-  .container {
-    background-color: $corPrimaria;
-    width: 100%;
-    height: 337px;
-    border-radius: 40px 40px 0 0;
+.container {
+  background-color: $corPrimaria;
+  width: 100%;
+  height: 337px;
+  border-radius: 2.5rem 2.5rem 0 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  &__contato {
+    color: $branco100;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    font-weight: 400;
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: $branco90;
+    }
+  }
+
+  &__contSec {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 1.3rem;
 
-    &__contato {
+    &__txt {
       color: $branco100;
       font-size: 20px;
       font-weight: 400;
-      line-height: 24.2px;
-      font-weight: 400;
-
-      a {
-        font-weight: 700;
-        text-decoration: none;
-        color: $branco90;
-      }
     }
 
+    &__btn {
+      background-color: $corSecundaria;
+      border: none;
+      width: 224px;
+      height: 48px;
+      border-radius: 30px;
+      padding: 10px;
+      cursor: pointer;
+      transition: transform 0.1s ease, background-color 0.1s ease;
+    }
 
+    &__btn:hover {
+      background-color: $corTerciaria;
+      transform: scale(1.05);
+    }
+
+    &__label {
+      font-family: $fontDestaque;
+      color: $branco100;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  .container {
+    width: 100%;
+    height: 14rem;
+    border-radius: 1.6rem 1.6rem 0 0 !important;
+    gap: 2rem;
+
+    &__contato {
+      font-size: 0.9rem;
+      line-height: 1rem;
+    }
+    &__contSec{
+      gap:0.5rem
+    }
+    &__txt{
+      font-size: 0.8rem;
+    }
+    &__btn {
+      width: 2rem;
+      border-radius: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 157px;
+    border-radius: 15px 15px 0px 0px !important;
+
+
+    &__contato {
+      display: none;
+    }
 
     &__contSec {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.3rem;
 
       &__txt {
-        color: $branco100;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        line-height: 14.52px;
+        width: 226px;
+        height: 30px;
       }
 
       &__btn {
-        background-color: $corSecundaria;
-        border: none;
-        width: 224px;
-        height: 48px;
-        border-radius: 30px;
-        padding: 10px;
-        cursor: pointer;
-        transition: transform 0.1s ease, background-color 0.1s ease;
-      }
-
-      &__btn:hover {
-        background-color: $corTerciaria;
-        transform: scale(1.05);
+        width: 130px;
+        height: 28px;
+        border-radius: 17.77px;
+        padding: 5.29px;
       }
 
       &__label {
-        font-family: $fontDestaque;
-        color: $branco100;
-        font-weight: 700;
-        font-size: 20px;
-      }
-    }
-
-  }
-
-  @media screen and (min-width: 360px) and (max-width: 500px) {
-    .container {
-      width: 100%;
-      height: 157px;
-      border-radius: 15px 15px 0px 0px;
-
-      &__contato {
-        display: none;
-      }
-
-      &__contSec {
-
-        &__txt {
-          font-size: 12px;
-          text-align: center;
-          line-height: 14.52px;
-          width: 226px;
-          height: 30px;
-        }
-
-        &__btn {
-          width: 130px;
-          height: 28px;
-          border-radius: 17.77px;
-          padding: 5.29px;
-        }
-
-        &__label {
-          font-size: 12px;
-          text-align: center;
-          line-height: 19.13px;
-          width: 58px;
-          height: 19px;
-        }
+        font-size: 12px;
+        text-align: center;
+        line-height: 19.13px;
+        width: 58px;
+        height: 19px;
       }
     }
   }
+}
