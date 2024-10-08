@@ -78,7 +78,7 @@ function ContainerSobreNos() {
               diferença e transformar vidas através de sorrisos saudáveis.
             </p>
             <ComponentButton
-              link="https://pipoca-agil-apresentacao.vercel.app"
+              link="https://squad-roxo-pastel.vercel.app/"
               target="_blank"
               label="Nossa Equipe"
               className={style.btEquipe}
@@ -180,7 +180,7 @@ function ContainerSobreNos() {
                 </a>
               </p>
               <ComponentButton
-                link="https://pipoca-agil-apresentacao.vercel.app"
+                link="https://squad-roxo-pastel.vercel.app/"
                 target="_blank"
                 label="Nossa Equipe"
                 className={style.btEquipeMobile}
