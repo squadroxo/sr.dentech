@@ -13,6 +13,7 @@ export const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  
   function toggleIsOpen() {
     setIsOpen(previewValue => !previewValue)
   }
