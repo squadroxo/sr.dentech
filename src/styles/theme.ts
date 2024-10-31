@@ -14,8 +14,8 @@ const theme: DefaultTheme = {
     background: '#F9F9F9',
   },
   fonts: {
-    primary: "'Inter', sans-serif",
-    highlight: "'Kalam', cursive",
+    primary: '"Inter", sans-serif',
+    highlight: '"Kalam", cursive',
   },
 };
 
