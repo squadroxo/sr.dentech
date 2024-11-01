@@ -1,3 +1,5 @@
+// TODO: deletar este componente e substituí-lo pelo componente Button feito com styled-components.
+
 import React from 'react';
 
 type ButtonProps = {
