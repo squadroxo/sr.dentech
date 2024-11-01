@@ -1,9 +1,11 @@
 import ContainerIntroduction from "../../components/ContainerIntroduction";
+import ContainerSection from "../../components/ContainerSection";
 import ContainerSobreNos from "../../components/ContainerSobreNos";
 import { Sobre } from "../../components/Sobre";
 import styles from "./home.module.scss";
 import { motion } from "framer-motion"
 import { Footer } from "../../components/Footer";
+
 export const HomePage = () => {
   return (
     <motion.div 
@@ -13,6 +15,7 @@ export const HomePage = () => {
       transition={{ duration: 0.3 }}
     >
       <ContainerIntroduction />
+      <ContainerSection />
       <Sobre />
       <div className={styles.backgroundSobreNos}>
         <ContainerSobreNos />
