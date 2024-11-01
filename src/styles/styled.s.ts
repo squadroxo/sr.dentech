@@ -14,6 +14,7 @@ declare module 'styled-components' {
             black90: string;
             line: string;
             background: string;
+            azul_claro: string;
         };
 
         fonts: {

@@ -8,10 +8,10 @@ export const Container = styled.div`
     position: relative;
     width: 91px;
     height: 18px;
-    background-color: #D6FDFF;
+    background-color: ${({theme}) => theme.colors.azul_claro};
     font-size: 8px;
     line-height: 9.67px;
-    color: #000;
+    color: ${({theme}) => theme.colors.black100};
     text-transform: uppercase;
     text-align: center;
     align-content: center;
@@ -23,7 +23,7 @@ export const Container = styled.div`
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #AA4F89;
+    color: ${({theme}) => theme.colors.secondary};
   }
 
   .container__card__content {
@@ -39,7 +39,7 @@ export const Container = styled.div`
     font-size: 14px;
     font-weight: 800;
     line-height: 16.8px;
-    color: #267B80;
+    color: ${({theme}) => theme.colors.tertiary};
     margin: 8px 0;
   }
 
@@ -47,7 +47,7 @@ export const Container = styled.div`
     font-size: 12px;
     font-weight: 400;
     line-height: 14.4px;
-    color: #333333;
+    color: ${({theme}) => theme.colors.text};
     text-align: justify;
   }
 
@@ -60,7 +60,7 @@ export const Container = styled.div`
     font-size: 10px;
     font-weight: 400;
     line-height: 12.09px;
-    color: #267B80;
+    color: ${({theme}) => theme.colors.tertiary};
     align-content: center;
     margin-left: 6px;
 

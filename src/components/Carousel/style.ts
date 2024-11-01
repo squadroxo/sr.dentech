@@ -18,7 +18,7 @@ export const ContainerCarousel = styled.div`
   .carousel_item {
     display: flex;
     flex-direction: column;
-    width: 152px;
+    width: 194px;
     height: 274px;
     padding: 21px 21px 0;
     margin: 22px 14px;
@@ -30,7 +30,7 @@ export const ContainerCarousel = styled.div`
     font-size: 14px;
     line-height: 16px;
     font-weight: 800;
-    color: #267B80;
+    color: ${({theme}) => theme.colors.tertiary};
     margin: 8px 0 16px;
   }
 

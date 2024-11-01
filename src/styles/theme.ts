@@ -12,6 +12,7 @@ const theme: DefaultTheme = {
     black90: '#0D0D0D',
     line: '#F0F0F0',
     background: '#F9F9F9',
+    azul_claro: '#D6FDFF',
   },
   fonts: {
     primary: '"Inter", sans-serif',
