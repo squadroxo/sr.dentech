@@ -33,21 +33,25 @@ const Button = ({
   secondary = false,
 }: ButtonProps) => {
   return (
-    <Styles.ButtonLink href={link} target={target}>
-      <Styles.Button
-        onClick={onClick}
-        disabled={disabled}
-        className={className}
-        $secondary={secondary}
+    <Styles.Button
+      onClick={onClick}
+      disabled={disabled}
+      className={className}
+      $secondary={secondary}
+    >
+      <Styles.ButtonLink
+        href={disabled ? undefined : link}
+        target={target}
       >
         <Styles.Label
           className={labelClassName}
           $secondary={secondary}
+          disabled={disabled}
         >
           {label}
         </Styles.Label>
-      </Styles.Button>
-    </Styles.ButtonLink>
+      </Styles.ButtonLink>
+    </Styles.Button>
   )
 };
 

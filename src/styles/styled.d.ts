@@ -14,6 +14,12 @@ declare module 'styled-components' {
             black90: string;
             line: string;
             background: string;
+            hoverPrimary: string;
+            hoverSecondary: string;
+            pressedPrimary: string;
+            pressedSecondary: string;
+            bgDisabled: string,
+            textDisabled: string;
         };
 
         fonts: {

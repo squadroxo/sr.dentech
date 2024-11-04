@@ -4,6 +4,7 @@ interface CommonProps {
   // o prefixo $ é para evitar um warning do TypeScript
   // ver mais: https://styled-components.com/docs/api#transient-props
   $secondary?: boolean;
+  disabled?: boolean;
 }
 
 export const ButtonLink = styled.a`
@@ -28,11 +29,24 @@ export const Button = styled.button<CommonProps>`
     transform 0.1s ease, 
     background-color 0.1s ease;  
 
-  &:hover {
-      background-color: ${({ theme, $secondary }) => (
-    $secondary ? theme.colors.tertiary : theme.colors.primary)};
-      transform: scale(1.05);
-  }  
+  &:hover:not(:disabled) {
+    background-color: ${({ theme, $secondary }) => (
+      $secondary ? theme.colors.hoverSecondary : theme.colors.hoverPrimary
+    )};
+    transform: scale(1.05);
+  }
+
+  &:active:not(:disabled) {
+    background-color: ${({ theme, $secondary }) => (
+      $secondary ? theme.colors.pressedSecondary : theme.colors.pressedPrimary
+    )};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: ${({ theme }) => theme.colors.bgDisabled};
+    color: ${({ theme }) => theme.colors.textDisabled}
+  }
 
   /* TODO: adicionar estilos para telas maiores */
 `;
@@ -40,7 +54,9 @@ export const Button = styled.button<CommonProps>`
 export const Label = styled.span<CommonProps>`
   font-size: ${({ $secondary }) => $secondary ? '1rem' : '0.88rem'};
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.white100};
+  color: ${({ theme, disabled }) => (
+    disabled ? theme.colors.textDisabled : theme.colors.white100
+  )};
   font-family: ${({ theme }) => theme.fonts.highlight};
   line-height: ${({ $secondary }) => $secondary ? '19.2px' : '22px'};
 
