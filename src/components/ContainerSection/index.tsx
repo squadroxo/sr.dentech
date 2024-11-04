@@ -2,6 +2,7 @@ import * as Styles from "./style";
 import dataSection from "../../data/dataSection";
 import { dataSectionProps } from "../../types/dataSections"; 
 import Carousel from "../Carousel";
+import Button from "../Button";
 
 const Section: React.FC<dataSectionProps> = ({ titleSection, tag, photo, alt, subtitle, text, postedBy, icon, carousel }) => {
   return (
@@ -20,6 +21,9 @@ const Section: React.FC<dataSectionProps> = ({ titleSection, tag, photo, alt, su
         </div>
       </div>
       <Carousel items={carousel} /> 
+      <div className="container__button">
+        <Button link="https://srdentech.vercel.app/saiba-mais" target="_blank" label="Ver mais"/>
+      </div>
     </Styles.Container>
   );
 };

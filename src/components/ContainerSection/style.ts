@@ -68,4 +68,9 @@ export const Container = styled.div`
       font-weight: 700;
     }
   }
+
+  .container__button {
+    display: flex;
+    justify-content: center;
+  }
 `;
