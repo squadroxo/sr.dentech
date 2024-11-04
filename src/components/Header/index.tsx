@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import { useState } from "react";
 import { MenuMobile } from "../MenuMobile";
 import { MenuBurguer } from "../Icons/MenuBurguer";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 
 import * as Styles from "./styles"; 
