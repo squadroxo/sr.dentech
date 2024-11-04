@@ -12,6 +12,12 @@ const theme: DefaultTheme = {
     black90: '#0D0D0D',
     line: '#F0F0F0',
     background: '#F9F9F9',
+    hoverPrimary: '#009BA2',
+    hoverSecondary: '#8E3272',
+    pressedPrimary: '#006361',
+    pressedSecondary: '#702661',
+    bgDisabled: '#D9D9D9',
+    textDisabled: '#B0B0B0',
   },
   fonts: {
     primary: '"Inter", sans-serif',
