@@ -1,4 +1,4 @@
-import ComponentButton from "components/ContainerButton";
+import Button from "components/Button";
 import style from 'components/ContainerIntroduction/ContainerIntroduction.module.scss';
 import criancasEscovandoDente from "assetsIcons/criancasEscovandoDente.png"; // Caminho relativo otimizado
 import { motion } from "framer-motion";
@@ -20,12 +20,12 @@ const ContainerIntroduction: React.FC = () => {
                             Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.
                         </p>
                         </div>
-                        <ComponentButton
+                        <Button
                             link="/saiba-mais"
                             label="Saiba mais"
                             className={style.btSaibaMais}
                             labelClassName={style.labelSaibaMais}
-                            primario={true}
+                            // primario={true}
                         />
                    
 
@@ -47,12 +47,12 @@ const ContainerIntroduction: React.FC = () => {
                     <span>Aprenda mais sobre saúde bucal!</span><br />
                     Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.
                 </p>
-                <ComponentButton
+                <Button
                     link="/saiba-mais"
                     label="Saiba mais"
                     className={style.btSaibaMaisMobile}
                     labelClassName={style.labelSaibaMaisMobile}
-                    primario={true}
+                    // primario={true}
                 />
             </motion.div>
         </>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  background-color: #21C9D3; // Lembrar de resolver a questão das variáveis
+  background-color: ${({theme}) => theme.colors.primary}; 
   position: relative;
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ export const Container = styled.header`
 
     .containerLinks__lista__item {
       font-family: $fontDestaque;
-      color: $branco100;
+      color: ${({theme}) => theme.colors.white100};
       font-weight: 700;
       font-size: 1rem;
       line-height: 1.5rem;
