@@ -3,6 +3,7 @@ import style from 'components/ContainerIntroduction/ContainerIntroduction.module
 import * as Styles from './styles';
 import criancasEscovandoDente from "assetsIcons/criancasEscovandoDente.png"; // Caminho relativo otimizado
 import { motion } from "framer-motion";
+import Button from "../Button";
 
 const ContainerIntroduction: React.FC = () => {
   return (
@@ -55,11 +56,10 @@ const ContainerIntroduction: React.FC = () => {
             Aqui você encontra curiosidades e dicas para cuidar bem da saúde bucal.
           </Styles.Text>
         </Styles.Content>
-        {/* TODO: substituir pelo componente Button (task 120) */}
-        <Styles.Button
+        <Button
           link="/saiba-mais"
           label="Saiba mais"
-          primario
+          onClick={() => window.location.href = './saiba-mais'}
         />
       </Styles.Article>
     </>

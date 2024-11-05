@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ContainerButton from 'components/ContainerButton';
 import { motion } from "framer-motion";
 
 export const Article = styled(motion.article)`
@@ -48,22 +47,3 @@ export const Text = styled.p`
         font-weight: 700;
     }
 `;
-
-/* 
-    TODO: apagar esse código. Ao invés dele, alterar o index.tsx para 
-    utilizar o componente Button (task 120) quando estiver pronto */
-export const Button = styled(ContainerButton)`    
-    background-color: ${({ theme }) => theme.colors.tertiary};
-    width: 194px;
-    padding: 0.4rem;
-    border: none;
-    border-radius: 20px;
-
-    span {
-        font-family: ${({ theme }) => theme.fonts.highlight};
-        font-size: .875rem;
-        font-weight: 700;
-        color: ${({ theme }) => theme.colors.white100};
-        line-height: 22px;
-    }
-`
