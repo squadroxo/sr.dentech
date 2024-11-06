@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 export const ContainerCarousel = styled.div`
   max-width: 100%;
-  
+
   .swiper-wrapper {
     width: 200px;
-    margin: 0 40px;
+    margin: 0 2px;
 }
   
   .carousel__img {
@@ -21,16 +21,17 @@ export const ContainerCarousel = styled.div`
     width: 194px;
     height: 274px;
     padding: 21px 21px 0;
-    margin: 22px 14px;
+    margin: 22px 0;
     box-shadow: 0px 0px 7px #00000012;
     border-radius: 8px;
   }
 
   .carousel__title {
     font-size: 14px;
+    font-family: ${({ theme }) => theme.fonts.lato};
     line-height: 16px;
     font-weight: 800;
-    color: ${({theme}) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors.tertiary};
     margin: 8px 0 16px;
   }
 

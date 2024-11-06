@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation } from 'swiper/modules';
 
 import { dataCarousel } from "../../types/dataSections";
 import * as Styles from "./style";
@@ -11,10 +10,8 @@ const Carousel: React.FC<{ items: dataCarousel[] }> = ({ items }) => {
   return (
     <Styles.ContainerCarousel>
       <Swiper
-        spaceBetween={0}
-        slidesPerView={1} 
-        navigation
-        modules={[Navigation]}
+        spaceBetween={-5}
+        slidesPerView={1.4} 
         loop={true}
       >
         {items.map((item) => {

@@ -7,6 +7,7 @@ import Button from "../Button";
 const Section: React.FC<dataSectionProps> = ({ titleSection, tag, photo, alt, subtitle, text, postedBy, icon, carousel }) => {
   return (
     <Styles.Container>
+      <Styles.Line />
       <div className="container__tag">{tag}</div>
       <h2 className="container__title">{titleSection}</h2>
       <div className="container__card__content">
