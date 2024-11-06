@@ -33,6 +33,8 @@ export const Container = styled.div`
 
   .container__card__content {
     margin-top: 22px;
+    height: 298px;
+    width: 295px;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -53,9 +55,15 @@ export const Container = styled.div`
     font-family: ${({ theme }) => theme.fonts.lato};
     font-size: 12px;
     font-weight: 400;
-    line-height: 14.4px;
+    height: 66px;
+    line-height: 16px; 
     color: ${({ theme }) => theme.colors.text};
     text-align: justify;
+
+    display: -webkit-box;          /* Necessário para -webkit-line-clamp */
+    -webkit-line-clamp: 4;         /* Número máximo de linhas */
+    -webkit-box-orient: vertical;  /* Define a orientação do box */
+    overflow: hidden;              /* Esconde o excesso de texto */
   }
 
   .container_icons {
