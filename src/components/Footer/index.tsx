@@ -31,9 +31,15 @@ export const Footer = () => {
           <div className="container__socialmedia">
             <p className="container__socialmedia__txt">Siga nossas redes sociais</p>
             <div className="container__socialmidia__icones">
+              <a href="https://br.linkedin.com/company/pipoca-%C3%A1gil" target="_blank" rel="noreferrer">
               <img src="/assets/ic_social.png" alt="Ícone do Linkedln" />
+              </a>
+              <a href="https://www.youtube.com/@PipocaAgil" target="_blank" rel="noreferrer">
               <img src="/assets/youtube.png" alt="Ícone do Youtube" />
+              </a>
+              <a href="https://open.spotify.com/show/5J1scP1l7m7kXK6v5RZS7J" target="_blank" rel="noreferrer">
               <img src="/assets/Subtract.png" alt="Ícone do Spotify" />
+              </a>
             </div>
           </div>
         </div>

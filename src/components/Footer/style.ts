@@ -79,6 +79,9 @@ export const Footer = styled(motion.footer)`
         height: 32px;
       }
     }
-
+  }
+  
+  @media (min-width: 768px) {
+    display: none;
   }
 ` 
