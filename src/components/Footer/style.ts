@@ -52,11 +52,6 @@ export const Footer = styled(motion.footer)`
       text-align: justify;
     }
 
-    .container__contSec__btn:hover {
-      background-color: ${({ theme }) => theme.colors.hoverSecondary};
-      transform: scale(1.05);
-    }
-
     .container__socialmedia {
       display: flex;
       flex-direction: column;

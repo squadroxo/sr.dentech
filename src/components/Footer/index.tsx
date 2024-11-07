@@ -1,17 +1,9 @@
-import Button from "components/Button"
-import { useLocation } from "react-router"
+import Button from "components/Button";
 import * as Styles from "./style";
 
 export const Footer = () => {
-  // const handleClick = () => {}
-
-  const local = useLocation();
-
-  const isHomepage = local.pathname === "/" ? true : false;
-
   return (
     <Styles.Footer
-      style={{ borderRadius: isHomepage ? "40px 40px 0 0" : "0"}}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
@@ -33,7 +25,7 @@ export const Footer = () => {
           label="Pipoca Ágil" 
           link="https://pipocaagil.com.br"
           target="_blank" 
-          onClick={() => { console.log('Botão clicado!')}} 
+          onClick={() => window.location.href = 'https://pipocaagil.com.br'}  
           secondary={true}
           />
           <div className="container__socialmedia">
