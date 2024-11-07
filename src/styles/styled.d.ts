@@ -20,11 +20,13 @@ declare module 'styled-components' {
             pressedSecondary: string;
             bgDisabled: string,
             textDisabled: string;
+            light_blue: string;
         };
 
         fonts: {
             primary: string;
             highlight: string;
+            lato: string;
         };
     }
 }
