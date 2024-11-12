@@ -1,3 +1,4 @@
+import { Link, LinkProps } from "react-router-dom";
 import styled from "styled-components";
 
 interface CommonProps {
@@ -7,19 +8,18 @@ interface CommonProps {
   disabled?: boolean;
 }
 
-export const ButtonLink = styled.a`
+export const Button = styled(Link)<LinkProps & CommonProps>`
   text-decoration: none;
-`;
-
-export const Button = styled.button<CommonProps>`
+  text-align: center;
   width: ${({ $secondary }) => $secondary ? '13.63rem' : '12.13rem'};
   padding: ${({ $secondary }) => $secondary ? '0.63rem 1.5rem' : '0.42rem'};
   border: none;
-  cursor: pointer;
   border-radius: 20px;
-  background-color: ${({ theme, $secondary }) => (
-    $secondary ? theme.colors.secondary : theme.colors.tertiary
-  )};
+  cursor: ${({ disabled }) => disabled ? 'not-allowed' : 'pointer'};
+  background-color: ${({ theme, disabled, $secondary }) => {
+    if (disabled) return theme.colors.bgDisabled;
+    return $secondary ? theme.colors.secondary : theme.colors.tertiary;
+  }};
   filter: ${({ $secondary }) => (
     $secondary
       ? 'drop-shadow(0 0 7.22px rgba(0,0,0,.25))'
@@ -29,26 +29,22 @@ export const Button = styled.button<CommonProps>`
     transform 0.1s ease, 
     background-color 0.1s ease;  
 
-  &:hover:not(:disabled) {
-    background-color: ${({ theme, $secondary }) => (
-      $secondary ? theme.colors.hoverSecondary : theme.colors.hoverPrimary
-    )};
-    transform: scale(1.05);
+  &:hover {
+    background-color: ${({ theme, disabled, $secondary }) => {
+    if (disabled) return theme.colors.bgDisabled;
+    return $secondary ? theme.colors.hoverSecondary : theme.colors.hoverPrimary
+  }};
+    transform: ${({ disabled }) => disabled ? 'none' : 'scale(1.05)'};
   }
 
-  &:active:not(:disabled) {
-    background-color: ${({ theme, $secondary }) => (
-      $secondary ? theme.colors.pressedSecondary : theme.colors.pressedPrimary
-    )};
+  &:active {
+    background-color: ${({ theme, disabled, $secondary }) => {
+    if (disabled) return theme.colors.bgDisabled;
+    return $secondary ? theme.colors.pressedSecondary : theme.colors.pressedPrimary
+  }};
   }
 
-  &:disabled {
-    cursor: not-allowed;
-    background-color: ${({ theme }) => theme.colors.bgDisabled};
-    color: ${({ theme }) => theme.colors.textDisabled}
-  }
-
-  /* TODO: adicionar estilos para telas maiores */
+/* TODO: adicionar estilos para telas maiores */
 `;
 
 export const Label = styled.span<CommonProps>`

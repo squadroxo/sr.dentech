@@ -11,17 +11,6 @@ type ButtonProps = {
   secondary?: boolean;
 };
 
-/**
- * Um botão renderizado dentro de um elemento âncora. As props link (href) 
- * e target são passadas ao elemento âncora. As props onClick, disabled e 
- * className são passadas para o elemento de botão. A prop label renderiza 
- * o texto do botão e estilos adicionais podem ser aplicados pela prop 
- * labelClassName.
- * 
- * Um tema secundário é aplicado quando a prop secondary é true.
- * 
- * Props disabled e secondary são false por padrão.
- */
 const Button = ({
   link,
   target,
@@ -32,25 +21,26 @@ const Button = ({
   labelClassName,
   secondary = false,
 }: ButtonProps) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    if (disabled) e.preventDefault();
+    else onClick && onClick();
+  }
   return (
     <Styles.Button
-      onClick={onClick}
-      disabled={disabled}
+      to={link}
+      target={target}
+      onClick={handleClick}
       className={className}
+      disabled={disabled}
       $secondary={secondary}
     >
-      <Styles.ButtonLink
-        href={disabled ? undefined : link}
-        target={target}
+      <Styles.Label
+        className={labelClassName}
+        disabled={disabled}
+        $secondary={secondary}
       >
-        <Styles.Label
-          className={labelClassName}
-          $secondary={secondary}
-          disabled={disabled}
-        >
-          {label}
-        </Styles.Label>
-      </Styles.ButtonLink>
+        {label}
+      </Styles.Label>
     </Styles.Button>
   )
 };
