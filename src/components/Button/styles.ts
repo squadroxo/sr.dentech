@@ -20,11 +20,12 @@ export const Button = styled(Link)<LinkProps & CommonProps>`
     if (disabled) return theme.colors.bgDisabled;
     return $secondary ? theme.colors.secondary : theme.colors.tertiary;
   }};
-  filter: ${({ $secondary }) => (
-    $secondary
+  filter: ${({ disabled, $secondary }) => {
+    if (disabled) return 'none';
+    return $secondary
       ? 'drop-shadow(0 0 7.22px rgba(0,0,0,.25))'
       : 'drop-shadow(0 0 6.67px rgba(0,0,0,.15))'
-  )};
+  }};
   transition: 
     transform 0.1s ease, 
     background-color 0.1s ease;  
@@ -44,7 +45,11 @@ export const Button = styled(Link)<LinkProps & CommonProps>`
   }};
   }
 
-/* TODO: adicionar estilos para telas maiores */
+  @media screen and (min-width: 768px) {
+    width: 218px;
+    padding: 10px 24px;
+    filter: ${({ disabled }) => disabled ? 'none' : 'drop-shadow(0 0 7.22px rgba(0,0,0,.25))'};
+  }
 `;
 
 export const Label = styled.span<CommonProps>`
@@ -54,7 +59,10 @@ export const Label = styled.span<CommonProps>`
     disabled ? theme.colors.textDisabled : theme.colors.white100
   )};
   font-family: ${({ theme }) => theme.fonts.highlight};
-  line-height: ${({ $secondary }) => $secondary ? '19.2px' : '22px'};
+  line-height: ${({ $secondary }) => $secondary ? '19px' : '22px'};
 
-  /* TODO: adicionar estilos para telas maiores */
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 `;
