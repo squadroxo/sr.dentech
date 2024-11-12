@@ -11,8 +11,8 @@ interface CommonProps {
 export const Button = styled(Link)<LinkProps & CommonProps>`
   text-decoration: none;
   text-align: center;
-  width: ${({ $secondary }) => $secondary ? '13.63rem' : '12.13rem'};
-  padding: ${({ $secondary }) => $secondary ? '0.63rem 1.5rem' : '0.42rem'};
+  width: ${({ $secondary }) => $secondary ? '218px' : '194px'};
+  padding: ${({ $secondary }) => $secondary ? '10px 24px' : '7px'};
   border: none;
   border-radius: 20px;
   cursor: ${({ disabled }) => disabled ? 'not-allowed' : 'pointer'};
@@ -48,7 +48,7 @@ export const Button = styled(Link)<LinkProps & CommonProps>`
 `;
 
 export const Label = styled.span<CommonProps>`
-  font-size: ${({ $secondary }) => $secondary ? '1rem' : '0.88rem'};
+  font-size: ${({ $secondary }) => $secondary ? '16px' : '14px'};
   font-weight: 700;
   color: ${({ theme, disabled }) => (
     disabled ? theme.colors.textDisabled : theme.colors.white100
