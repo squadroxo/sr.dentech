@@ -4,6 +4,10 @@ import styled from "styled-components";
 export const Line = styled.div`
   border-top: 1px solid ${({ theme }) => theme.colors.line};
   margin: 0 0 40px 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `
 
 export const Container = styled.div`
@@ -16,7 +20,7 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.light_blue};
     font-size: 8px;
     line-height: 9.67px;
-    color: ${({ theme }) => theme.colors.black100};
+    color: ${({ theme }) => theme.colors.text};
     text-transform: uppercase;
     text-align: center;
     align-content: center;
@@ -60,15 +64,21 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.colors.text};
     text-align: justify;
 
-    display: -webkit-box;          /* Necessário para -webkit-line-clamp */
-    -webkit-line-clamp: 4;         /* Número máximo de linhas */
-    -webkit-box-orient: vertical;  /* Define a orientação do box */
-    overflow: hidden;              /* Esconde o excesso de texto */
+    display: -webkit-box;          
+    -webkit-line-clamp: 4;        
+    -webkit-box-orient: vertical; 
+    overflow: hidden;              
   }
 
   .container_icons {
     display: flex;
     margin-top: 12px;
+    align-items: center;
+  }
+
+  .container__card__icon {
+    width: 24px;
+    height: 24px;
   }
 
   .container_icons_text {
@@ -90,6 +100,80 @@ export const Container = styled.div`
   }
 
   @media (min-width: 768px) {
-    display: none;
+    width: 100%;
+
+    .container__titles {
+      width: 920px;
+      margin: 16px auto 32px;
+    }
+
+    .container__title {
+      font-size: 29px;
+      line-height: 34.8px;
+    }
+    
+    .container__tag {
+      width: 128px;
+      height: 31px;
+      font-size: 12px;
+      line-height: 14.51px;
+      font-weight: 400;
+    }
+
+    .container__card__content {
+      display: flex;
+      flex-direction: row;
+      gap: 38px;
+      margin: 0 auto;
+      width: 920px;
+      height: 451px;
+   }
+
+   .container__card__img {
+      width: 522px;
+      height: 415px;
+   }
+
+   .container__card__title {
+    font-family: ${({ theme }) => theme.fonts.primary};
+    color: ${({ theme }) => theme.colors.secondary};
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.6px;
+    letter-spacing: -1px;
+   }
+
+   .container__card_text {
+    font-family: ${({ theme }) => theme.fonts.primary};
+    font-size: 16px;
+    font-weight: 400;
+    height: 76px;
+    line-height: 19.2px;
+    text-align: left;
+    margin-top: 16px;
+   }
+   
+  .container_icons {
+    margin-top: 38px;
+    width: 237px;
+    height: 48px;
+    gap: 12px;
+  }
+
+  .container__card__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+   .container_icons_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
   }
 `;
