@@ -173,7 +173,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 949px) {
+  @media (min-width: 950px) {
     width: 100%;
 
     .container__titles {
