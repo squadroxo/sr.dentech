@@ -1,4 +1,3 @@
-// import styles from "./Header.module.scss";
 import logo from "../../assetsIcons/logoSrDente.png";
 import { dataLinks } from "./data"
 import { useNavigate } from "react-router";
@@ -8,14 +7,12 @@ import { MenuBurguer } from "../Icons/MenuBurguer";
 import { AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 
-import * as Styles from "./styles"; 
+import * as Styles from "./styles";
 
 export const Header = () => {
   const navigate = useNavigate();
-
   const [isOpen, setIsOpen] = useState(false);
 
-  
   function toggleIsOpen() {
     setIsOpen(previewValue => !previewValue)
   }
@@ -29,9 +26,9 @@ export const Header = () => {
         <ul className="containerLinks__lista">
           {dataLinks.map(link => (
             <li key={link.id}>
-              <a className="containerLinks__lista__item" href={link.href}>
+              <Styles.StyledNavLink to={link.href}>
                 {link.texto}
-              </a>
+              </Styles.StyledNavLink>
             </li>
           ))}
         </ul>
@@ -41,7 +38,6 @@ export const Header = () => {
           </AnimatePresence>
           {isOpen ? <IoMdClose onClick={toggleIsOpen} size={30} color="white" /> : <MenuBurguer height="20" width="30" onClick={toggleIsOpen} />}
         </div>
-
       </nav>
     </Styles.Container>
   )

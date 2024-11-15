@@ -1,7 +1,8 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  background-color: ${({theme}) => theme.colors.primary}; 
+  background-color: ${({ theme }) => theme.colors.primary}; 
   position: relative;
   display: flex;
   align-items: center;
@@ -37,38 +38,43 @@ export const Container = styled.header`
     margin-right: 40px;
   }
 
-  @media screen and (min-width: 1280px) and (max-width: 1366px) {
-    width: 100%;
-    height: 6rem;
+  @media screen and (min-width: 768px) {
+    height: 105px;
+    padding: 16px;
+    border-radius: 0 0 30px 30px;
+    justify-content: center;
+    column-gap: 100px;
 
     .containerTitulo__img {
-      width: 5rem;
-      height: 4.5rem;
+      width: 82px;
+      height: 73px;
+      margin: 0;
     }
 
     .containerLinks__lista {
       display: flex;
-      gap: 3.8rem;
+      column-gap: 48px;
     }
-
-    .containerLinks__lista__item {
-      font-family: $fontDestaque;
-      color: ${({theme}) => theme.colors.white100};
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      text-decoration: none;
-    }
-
     .containerHamburguer {
       display: none;
     }
-
   }
 
-  @media screen and (min-width: 1366px){
-    border-radius: 0 0 40px 40px;
-    height: 115px;
+  @media screen and (min-width: 950px) {
+    column-gap: 300px;
   }
 `;
 
+export const StyledNavLink = styled(NavLink)`
+  font-family: ${({ theme }) => theme.fonts.highlight};
+  color: ${({ theme }) => theme.colors.white100};
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline transparent;
+  transition: text-decoration 150ms ease-out;
+
+  &.active,
+  &:hover {
+    text-decoration: ${({ theme }) => `underline 2px ${theme.colors.white100}`};
+  }
+`
