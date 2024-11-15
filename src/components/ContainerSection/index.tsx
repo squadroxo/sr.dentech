@@ -5,7 +5,6 @@ import Carousel from "../Carousel";
 import Button from "../Button";
 import { useEffect, useState } from "react";
 
-// Funcão para saber em qual resolução de tela está
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -35,9 +34,9 @@ const Section: React.FC<SectionProps> = ({
   carousel,
   index
 }) => {
-  const isDesktop = useIsDesktop(); // Verifica se está no modo desktop
-  const imageSrc = isDesktop ? photoDesktop : photoMobile; // Define a imagem de acordo com a resolução de tela
-  const isEven = index % 2 === 0; // Usei a lógica de número par para definir uma seçãoo com a foto de um lado, e impar para a outra seção com a foto de outro
+  const isDesktop = useIsDesktop();
+  const imageSrc = isDesktop ? photoDesktop : photoMobile;
+  const isEven = index % 2 === 0;
 
   return (
     <Styles.Container>
@@ -47,15 +46,13 @@ const Section: React.FC<SectionProps> = ({
         <h2 className="container__title">{titleSection}</h2>
       </div>
       <div
-        className={`container__card__content ${isDesktop && (isEven ? "image-left" : "image-right") // Alterna apenas no desktop
-          }`}
+        className={"container__card__content"}
       >
         {/* No mobile, a imagem sempre vem primeiro */}
         {!isDesktop && (
           <img className="container__card__img" src={imageSrc} alt={alt} />
         )}
 
-        {/* No desktop, alterna a ordem com base no índice */}
         {isDesktop && isEven && (
           <img className="container__card__img" src={imageSrc} alt={alt} />
         )}
