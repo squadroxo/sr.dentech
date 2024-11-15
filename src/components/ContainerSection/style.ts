@@ -98,7 +98,7 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  @media (min-width: 768px) and (max-width: 949px) {
+  @media (min-width: 768px) {
     .container__titles {
       width: 740px;
       margin: 16px auto 32px;
@@ -123,7 +123,7 @@ export const Container = styled.div`
       gap: 38px;
       margin: 0 auto;
       width: 740px;
-      height: 451px;
+      height: 431px;
     }
 
     .container__card__img {
@@ -134,7 +134,7 @@ export const Container = styled.div`
     .container__card__title {
       font-family: ${({ theme }) => theme.fonts.primary};
       color: ${({ theme }) => theme.colors.secondary};
-      font-size: 38px;
+      font-size: 33px;
       font-weight: 700;
       line-height: 45.6px;
       letter-spacing: -1px;
@@ -151,15 +151,15 @@ export const Container = styled.div`
     }
 
     .container_icons {
-      margin-top: 38px;
+      margin-top: 26px;
       width: 237px;
       height: 48px;
       gap: 12px;
     }
 
     .container__card__icon {
-      width: 48px;
-      height: 48px;
+      width: 34px;
+      height: 34px;
     }
 
     .container_icons_text {
@@ -173,7 +173,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 950px) {
+  @media (min-width: 949px) {
     width: 100%;
 
     .container__titles {
