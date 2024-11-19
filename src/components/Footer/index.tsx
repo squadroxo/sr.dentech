@@ -44,7 +44,6 @@ export const Footer = () => {
             label="Pipoca Ágil"
             link="https://pipocaagil.com.br"
             target="_blank"
-            onClick={() => window.location.href = 'https://pipocaagil.com.br'}
             secondary={true}
           />
           <div className="container__socialmedia">
@@ -63,7 +62,7 @@ export const Footer = () => {
           </div>
         </div>
       ) : (
-        // Layout para desktop
+        // Layout para telas maiores
         <div className="container__contSec">
           <img src={DenteComEscovaSorrindo} alt="Dente Sorrindo Com Kit Escovacao" />
           <div className="container__contSec__content">
@@ -80,7 +79,6 @@ export const Footer = () => {
               label="Pipoca Ágil"
               link="https://pipocaagil.com.br"
               target="_blank"
-              onClick={() => window.location.href = 'https://pipocaagil.com.br'}
               secondary={true}
             />
           </div>

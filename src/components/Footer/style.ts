@@ -101,6 +101,7 @@ export const Footer = styled(motion.footer)`
     
     .container__contSec .container__contSec__txt {
       width: 300px;
+      text-align: center;
     }
 
     .container__contSec img {
