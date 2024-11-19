@@ -4,16 +4,16 @@ export const dataLinksMobile = [
   {
     id: uuidv4(),
     texto: "Saúde bucal familiar",
-    href: "/construcao"
+    href: "/saude-bucal-familiar"
   },
   {
     id: uuidv4(),
     texto: "Problemas bucais",
-    href: "/construcao"
+    href: "/problemas-bucais"
   },
   {
     id: uuidv4(),
     texto: "Sobre",
-    href: "/construcao"
+    href: "/sobre"
   },
 ]
