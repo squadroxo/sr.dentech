@@ -33,7 +33,12 @@ export const Footer = styled(motion.footer)`
     justify-content: center;
     gap: 24px;
 
-    .container__connSec__content {
+    img {
+      width: 72px;
+      height: 72px;
+    }
+
+    .container__contSec__content {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -82,6 +87,42 @@ export const Footer = styled(motion.footer)`
   }
   
   @media (min-width: 768px) {
-    display: none;
+    height: 263px;
+    justify-content: center;
+
+    .container__contSec {
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    .container__contSec {
+      width: 300px;
+    }
+    
+    .container__contSec .container__contSec__txt {
+      width: 300px;
+    }
+
+    .container__contSec img {
+      width: 167px;
+      height: 167px;
+    }
+
+    .container__contSec__content {
+      flex-direction: column;
+      gap: 24px;
+      width: 410px;
+    }
+
+  }
+
+  @media (min-width: 949px) {
+    .container__contSec .container__contSec__txt {
+      width: 414px;
+    }
+
+    .container__contSec {
+      gap: 85.5px;
+    }
   }
 ` 
