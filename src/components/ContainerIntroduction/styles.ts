@@ -2,48 +2,86 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Article = styled(motion.article)`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 1.5rem;
-    margin: 2.5rem;
-    font-family: ${({ theme }) => theme.fonts.primary};
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 40px;
+  font-family: ${({ theme }) => theme.fonts.primary};
 
-    /* 
-        TODO: solução alternativa criada para não mostrar o conteúdo Web. 
-        Alterar quando estiver fazendo a task de refatoração web.
-    */
-    @media screen and (min-width: 500px) {
-        display: none;
-    }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 52px;
+    flex-direction: row-reverse;
+    column-gap: 30px;
+  }
+
+  @media screen and (min-width: 950px) {
+    column-gap: 16px;
+  }
 `;
 
-export const Image = styled.img`
+export const ImageSet = styled.picture`
+  img {      
     width: 264px;
+
+    @media screen and (min-width: 768px) {
+      width: 320px;
+    }
+
+    @media screen and (min-width: 950px) {
+      width: 452px;
+    }
+  }
 `;
 
 export const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    max-width: 452px;
+  }
 `;
 
 export const Title = styled.h1`
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5rem;
-    color: ${({ theme }) => theme.colors.primary};
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: ${({ theme }) => theme.colors.primary};
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 45.6px;
+  }
+
+  @media screen and (min-width: 950px) {
+    font-size: 38px;
+    line-height: 45.6px;
+  }
 `;
 
 export const Text = styled.p`
-    font-size: .875rem;
-    color: ${({ theme }) => theme.colors.text};
-    font-weight: 400;
-    line-height: 1rem;
-    text-align: center;
-    
-    span{
-        font-weight: 700;
-    }
+  font-size: 14px;
+  color: ${({ theme }) => theme.colors.text};
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+  
+  span{
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 950px) {
+    font-size: 16px;
+  }
 `;

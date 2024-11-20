@@ -3,6 +3,8 @@ import ComponentButton from "components/ContainerButton/index";
 import DenteComEscovaSorrindo from "assetsIcons/DenteSorrindoComKitEscovacao.png";
 import { motion } from "framer-motion";
 
+// TODO: quando refatorar esse componente, utilizar o componente Button
+// e verificar se é possível deletar a pasta ContainerButton.
 function ContainerSobreNos() {
   return (
     <>
