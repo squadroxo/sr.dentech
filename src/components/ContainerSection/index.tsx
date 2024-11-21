@@ -3,19 +3,7 @@ import dataSection from "../../data/dataSection";
 import { dataSectionProps } from "../../types/dataSections";
 import Carousel from "../Carousel";
 import Button from "../Button";
-import { useEffect, useState } from "react";
-
-function useIsDesktop() {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isDesktop;
-}
+import useIsDesktop from "../../hooks/useIsDesktop";
 
 interface SectionProps extends dataSectionProps {
   index: number;
@@ -80,8 +68,7 @@ const Section: React.FC<SectionProps> = ({
       <Carousel items={carousel} />
       <div className="container__button">
         <Button
-          link="https://srdentech.vercel.app/saiba-mais"
-          target="_blank"
+          link="https://srdentech.vercel.app/construcao"
           label="Ver mais"
         />
       </div>

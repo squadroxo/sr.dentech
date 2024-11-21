@@ -11,25 +11,35 @@ const Carousel: React.FC<{ items: dataCarousel[] }> = ({ items }) => {
     <Styles.ContainerCarousel>
       <Swiper
         spaceBetween={-5}
-        slidesPerView={1.4} 
+        slidesPerView={1.4}
         loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 3
+          },
+          950: {
+            slidesPerView: 4,
+            spaceBetween: -10
+          }
+        }}
       >
         {items.map((item) => {
           return (
-          <SwiperSlide key={item.id}>
-            <div className="carousel_item">
-              <img className="carousel__img" src={item.photoCarousel} alt={item.alt} />
-              <h3 className="carousel__title">{item.titleCarousel}</h3>
-              <p className="carousel__text">{item.textCarousel}</p>
-              <div className="container_icons">
-                <img src={item.icon} alt="Ícone de Dente" />
-                <p className="container_icons_text">
-                  Postado por <span>{item.postedBy}</span>
-                </p>
+            <SwiperSlide key={item.id}>
+              <div className="carousel_item">
+                <img className="carousel__img" src={item.photoCarousel} alt={item.alt} />
+                <h3 className="carousel__title">{item.titleCarousel}</h3>
+                <p className="carousel__text">{item.textCarousel}</p>
+                <div className="container_icons">
+                  <img src={item.icon} alt="Ícone de Dente" />
+                  <p className="container_icons_text">
+                    Postado por <span>{item.postedBy}</span>
+                  </p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        )})}
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
     </Styles.ContainerCarousel>
   );
