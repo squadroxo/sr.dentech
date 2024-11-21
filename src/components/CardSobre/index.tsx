@@ -6,6 +6,9 @@ import { motion } from "framer-motion"
 
 type CardSobreProps = Omit<dataCardSobreProps, "id" | "descMobile" | "slug">;
 
+// TODO: este componente não é mais utilizado. 
+// Deletar quando o épico do MVP for finalizado?
+// Ou tentar reutilizá-lo para a página de Leitura do card?
 export const CardSobre = ({
   titleCard,
   photo,

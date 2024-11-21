@@ -2,13 +2,16 @@ import dataCards from "../../data/data";
 import { useNavigate, useParams } from "react-router";
 import styles from "./SobreCard.module.scss";
 import { NotFoundPage } from "../NotFound";
-import { Backfoward } from "../../components/Icons/Backfoward";
-import pontilhado from "../../assets/pontilhado.svg";
-import tracado from "../../assets/tracado.svg";
+import { Backfoward } from "../../components/Icons/Backfoward"; // TODO: deletar arquivo
+import pontilhado from "../../assets/pontilhado.svg"; // TODO: deletar arquivo
+import tracado from "../../assets/tracado.svg"; // TODO: deletar arquivo
 import { Fragment } from "react/jsx-runtime";
 import { TextoDestaque } from "../../components/TextoDestaque";
 import dente from "./assets/dente.svg";
 
+// TODO: esse componente é renderizado no caminho /aprenda-mais/:slugCard
+// para a tela mobile, e não vai existir na versão nova da página.
+// Deletar quando o épico do MVP for finalizado?
 export const SobreCardPage = () => {
   const { slugCard } = useParams();
   const navigate = useNavigate();
