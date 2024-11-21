@@ -68,7 +68,7 @@ const Section: React.FC<SectionProps> = ({
       <Carousel items={carousel} />
       <div className="container__button">
         <Button
-          link="https://srdentech.vercel.app/construcao"
+          link="construcao"
           label="Ver mais"
         />
       </div>
