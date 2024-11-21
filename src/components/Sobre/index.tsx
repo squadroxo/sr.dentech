@@ -1,9 +1,13 @@
 import styles from "./sobre.module.scss";
-import data from "../../data/data";
+import data from "../../data/data"; // TODO: deletar ou será reaproveitado?
 import { CardSobre } from "../CardSobre";
 import { CardSobreMobile } from "../CardSobreMobile";
-import linhaDivisoria from "../../assetsIcons/divisoria.png";
+import linhaDivisoria from "../../assetsIcons/divisoria.png"; // TODO: deletar arquivo
 
+// TODO: este componente é usado somente na versão antiga do site. Ele renderiza
+// o conteúdo sobre saúde bucal da Home, que na versão atual foi substituído por 
+// seções que contêm um carrossel com páginas individuais. 
+// Deletar quando o épico do MVP for finalizado?
 export const Sobre = () => {
   return (
     <div className={styles.container}>

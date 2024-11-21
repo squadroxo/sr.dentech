@@ -5,6 +5,9 @@ import { motion } from "framer-motion"
 
 type CardSobreProps = Omit<dataCardSobreProps, "id">;
 
+// TODO: este componente não é mais utilizado. 
+// Deletar quando o épico do MVP for finalizado?
+// Não dá para reutilizá-lo, pois a nova versão usa carrossel, já implementado.
 export const CardSobreMobile = ({
     titleCard,
     photo,
