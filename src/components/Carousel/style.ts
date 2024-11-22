@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 export const ContainerCarousel = styled.div`
@@ -7,8 +6,8 @@ export const ContainerCarousel = styled.div`
   .swiper-wrapper {
     width: 200px;
     margin: 0 2px;
-}
-  
+  }
+
   .carousel__img {
     width: 152px;
     height: 92px;
@@ -41,8 +40,54 @@ export const ContainerCarousel = styled.div`
     font-weight: 400;
   }
 
+  .container_icons img {
+    width: 24px;
+    height: 24px;
+  }
+
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    font-size: 28px; 
+    font-size: 28px;
   }
-`
+
+  @media (min-width: 768px) {
+    .swiper-wrapper {
+      width: 700px;
+      margin: 0 auto;
+    }
+
+    .container_icons {
+      margin: 8px 0 0;
+    }
+
+    .container_icons img {
+      width: 31px;
+      height: 31px;
+    }
+
+    .container_icons p,
+    strong {
+      font-size: 10px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 949px) {
+    .swiper-wrapper {
+      width: 920px;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      max-width: 244px;
+    }
+
+    .carousel_item {
+      width: 218px;
+    }
+
+    .carousel__img {
+      width: 176px;
+    }
+  }
+`;

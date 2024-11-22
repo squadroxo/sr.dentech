@@ -40,6 +40,15 @@ const dataSection: dataSectionProps[] = [
         alt: "Bebê sorrindo",
         postedBy: "Sr.Dente",
         icon: "/assets/IconeDenteSecao.png",
+      },
+      {
+        id: uuidv4(),
+        titleCarousel: "Titulo 3",
+        textCarousel: "Estou aqui para orientar e capacitar nossa squad a alcançar todo o seu potencial. Quero garantir que todos",
+        photoCarousel: "/assets/bebe-1-menor.png",
+        alt: "Bebê sorrindo",
+        postedBy: "Sr.Dente",
+        icon: "/assets/IconeDenteSecao.png",
       }
     ]
   },
@@ -55,6 +64,15 @@ const dataSection: dataSectionProps[] = [
     postedBy: "Sr.Dente",
     icon: "/assets/IconeDenteSecao.png",
     carousel: [
+      {
+        id: uuidv4(),
+        titleCarousel: "Titulo",
+        textCarousel: "Estou aqui para orientar e capacitar nossa squad a alcançar todo o seu potencial. Quero garantir que todos",
+        photoCarousel: "/assets/bebe-1-menor.png",
+        alt: "Bebê sorrindo",
+        postedBy: "Sr.Dente",
+        icon: "/assets/IconeDenteSecao.png",
+      },
       {
         id: uuidv4(),
         titleCarousel: "Titulo",
