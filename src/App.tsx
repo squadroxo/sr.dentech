@@ -6,6 +6,7 @@ import ConstrucaoPage from "./pages/Construcao";
 import { SobreCardPage } from "./pages/SobreCard";
 import { SaibaMaisPage } from "./pages/SaibaMais";
 import { Footer } from "./components/Footer";
+import LeituraCard from "./pages/LeituraCard";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/sobre" element={<ConstrucaoPage />} />
         <Route path="/saude-bucal-familiar" element={<ConstrucaoPage />} />
         <Route path="/problemas-bucais" element={<ConstrucaoPage />} />
+        <Route path="/conteudo" element={<LeituraCard />} />
         <Route path="/saiba-mais" element={<SaibaMaisPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
