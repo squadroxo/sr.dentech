@@ -1,7 +1,6 @@
 import * as Styles from './styles';
 import ContainerIntroduction from "../../components/ContainerIntroduction";
 import ContainerSection from "../../components/ContainerSection";
-import { Footer } from "../../components/Footer";
 
 export const HomePage = () => {
   return (
@@ -12,7 +11,6 @@ export const HomePage = () => {
     >
       <ContainerIntroduction />
       <ContainerSection />
-      <Footer />
     </Styles.Home>
   )
 }

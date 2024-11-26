@@ -5,6 +5,7 @@ import { NotFoundPage } from "./pages/NotFound";
 import ConstrucaoPage from "./pages/Construcao";
 import { SobreCardPage } from "./pages/SobreCard";
 import { SaibaMaisPage } from "./pages/SaibaMais";
+import { Footer } from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/saiba-mais" element={<SaibaMaisPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

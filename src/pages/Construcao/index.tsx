@@ -1,7 +1,6 @@
 import styles from "./construcao.module.scss";
 import fotoConstrucao from "./assets/obras.png";
 import { Botao } from "../../components/Botao";
-import { Footer } from "../../components/Footer";
 const ConstrucaoPage = () => {
   return (
     <div className={styles.container}>
@@ -13,7 +12,6 @@ const ConstrucaoPage = () => {
         tamanhoIcone={30}
         texto="Voltar a página inicial"
       />
-        <Footer />
     </div>
   )
 }
