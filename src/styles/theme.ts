@@ -10,6 +10,7 @@ const theme: DefaultTheme = {
     white90: '#F5F5F5',
     black100: '#000000',
     black90: '#0D0D0D',
+    gray: '#666666',
     line: '#F0F0F0',
     background: '#F9F9F9',
     light_blue: '#D6FDFF',

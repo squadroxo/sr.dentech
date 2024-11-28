@@ -12,6 +12,7 @@ declare module 'styled-components' {
             white90: string;
             black100: string;
             black90: string;
+            gray: string;
             line: string;
             background: string;
             hoverPrimary: string;
