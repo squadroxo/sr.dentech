@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     line-height: 1;
     min-height: 100vh;
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.white100};
     color: ${({ theme }) => theme.colors.text};
   }
 
