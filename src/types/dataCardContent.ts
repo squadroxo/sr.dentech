@@ -1,6 +1,6 @@
 // Tipos de dados para a página inteira
 
-export type PageContentProps = {
+export type CardContentProps = {
   id: string;  // id geral da página
 
   // Seção inicial 

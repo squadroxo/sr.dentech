@@ -1,6 +1,6 @@
-import { PageContentProps } from "@/types/dataCardContent";
+import { CardContentProps } from "@/types/dataCardContent";
 
-const dataCardContent: PageContentProps[] = [
+const dataCardContent: CardContentProps[] = [
   {
     id: "1",
     initialSection: {
