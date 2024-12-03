@@ -48,8 +48,8 @@ export default function LeituraCard() {
 
       </Styles.Article>
 
-      {/* Linha divisória */}
-      
+      <Styles.Line />
+
       <Styles.SeeMore
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
