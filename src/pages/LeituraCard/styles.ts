@@ -22,3 +22,21 @@ export const Instructions = styled(motion.article)`
     line-height: 14.4px;
   }
 `
+
+export const SeeMore = styled(motion.article)`
+  padding: 32px 40px;
+
+  h2 {
+    color: ${({ theme }) => theme.colors.secondary};
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 24px;
+  }
+`;
+
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+`;

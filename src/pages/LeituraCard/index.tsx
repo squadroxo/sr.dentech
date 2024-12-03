@@ -1,6 +1,7 @@
 import * as Styles from './styles';
+import { instructions, seeMore } from './mockData';
 import InstructionCard from '../../components/InstructionCard';
-import { instructions } from './mockData';
+import ContentCard from '../../components/ContentCard';
 
 export default function LeituraCard() {
   return (
@@ -27,8 +28,18 @@ export default function LeituraCard() {
       </Styles.Article>
 
       {/* Linha divisória */}
-      
-      {/* Article Veja Também (Seção 3) - motion */}
+
+      <Styles.SeeMore
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <h2>Veja também</h2>
+        <Styles.List>
+          <li><ContentCard {...seeMore[0]} /></li>
+          <li><ContentCard {...seeMore[1]} /></li>
+        </Styles.List>
+      </Styles.SeeMore>
     </>
   );
 }
