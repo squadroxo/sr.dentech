@@ -1,14 +1,7 @@
+import { ISectionContentCard } from '@/types/dataSections';
 import * as Styles from './styles';
 
-interface IContentCard {
-  id: string,
-  title: string,
-  text: string,
-  photo: string,
-  alt: string,
-}
-
-export default function ContentCard({ ...item }: IContentCard) {
+export default function ContentCard({ ...item }: ISectionContentCard) {
   return (
     <Styles.Section>
       <img src={item.photo} alt={item.alt} />

@@ -17,7 +17,7 @@ export default function LeituraCard() {
   }
 
   // Desestruturando os dados da página
-  const { initialSection, instructionsSection } = pageData;
+  const { initialSection, instructionsSection, seeMoreSection } = pageData;
 
   return (
     <>
@@ -49,6 +49,7 @@ export default function LeituraCard() {
       </Styles.Article>
 
       {/* Linha divisória */}
+      
       <Styles.SeeMore
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -56,8 +57,9 @@ export default function LeituraCard() {
       >
         <h2>Veja também</h2>
         <Styles.List>
-          {/* <li><ContentCard {...seeMore[0]} /></li>
-          <li><ContentCard {...seeMore[1]} /></li> */}
+          {seeMoreSection.map(item => <li key={item.id}>
+            <ContentCard {...item} />
+          </li>)}
         </Styles.List>
       </Styles.SeeMore>
     </>

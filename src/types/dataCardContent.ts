@@ -1,5 +1,7 @@
 // Tipos de dados para a página inteira
 
+import { ISectionContentCard } from "./dataSections";
+
 export type CardContentProps = {
   id: string;  // id geral da página
 
@@ -7,6 +9,7 @@ export type CardContentProps = {
   initialSection: InitialSectionProps;
   // Seção de instruções
   instructionsSection: InstructionsSectionProps;
+  seeMoreSection: ISectionContentCard[];
 };
 
 // Tipo para a seção inicial
@@ -29,4 +32,3 @@ export type InstructionProps = {
   title: string;
   text: string;
 };
-
