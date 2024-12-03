@@ -28,6 +28,9 @@ const dataCardContent: CardContentProps[] = [
         }
       ]
     },
+    cardInformativo: {
+      text: "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas ao dentista!"
+    }
   }
 ];
 

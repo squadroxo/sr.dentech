@@ -4,6 +4,7 @@ import InitialSectionCardContent from '../../components/InitialSectionCardConten
 import { useParams } from 'react-router';
 import dataCardContent from '../../data/dataCardContent';
 import { NotFoundPage } from '../NotFound';
+import { CardInformativo } from '../../components/CardInformativo';
 
 export default function LeituraCard() {
   const { id } = useParams<{ id: string }>(); // Obtém o ID da URL
@@ -16,7 +17,7 @@ export default function LeituraCard() {
   }
 
   // Desestruturando os dados da página
-  const { initialSection, instructionsSection } = pageData;
+  const { initialSection, instructionsSection, cardInformativo } = pageData;
 
   return (
     <>
@@ -44,6 +45,9 @@ export default function LeituraCard() {
         </Styles.Instructions>
 
         {/* Texto em destaque */}
+        <CardInformativo
+          text={cardInformativo.text}
+        />
 
       </Styles.Article>
 

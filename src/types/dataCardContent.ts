@@ -7,6 +7,8 @@ export type CardContentProps = {
   initialSection: InitialSectionProps;
   // Seção de instruções
   instructionsSection: InstructionsSectionProps;
+  // Componente de destaque
+  cardInformativo: CardInformativoProps;
 };
 
 // Tipo para a seção inicial
@@ -29,4 +31,9 @@ export type InstructionProps = {
   title: string;
   text: string;
 };
+
+export type CardInformativoProps = {
+  text: string;
+}
+
 
