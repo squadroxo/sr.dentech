@@ -1,33 +1,33 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&display=swap');
-  width: 65%;
-  height: auto;
-  background-color: #267B80;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  width: 100%;
+  height: 88px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  border-radius: 0.6rem;
-  margin: 3rem auto;
-  padding: 1rem 2rem;
+  gap: 12px;
+  margin: 40px auto 0;
+  border-radius: 7.18px;
+  padding: 12px 16px;
 
   .img {
+    width: 21.53px;
+    height: 21.53px;
   }
 
   .text {
+    font-family: ${({ theme }) => theme.fonts.highlight};
+    color: ${({ theme }) => theme.colors.white100};
     font-weight: 700;
-    font-size: 0.9rem;
-    line-height: 1.4rem;
+    font-size: 14px;
+    line-height: 15.79px;
     text-align: center;
-    font-family: "Kalam", cursive;
-    color: white;
-    width: 90%;
   }
 
-  .strutureDesktop {
+  // TODO: Estilizar o desktop posteriormente
+  /* .strutureDesktop {
     display: none;
   }
 
@@ -95,5 +95,5 @@ export const Container = styled.div`
       width: 3rem;
       height: 2.75rem;
     }
-  }
+  } */
 `;

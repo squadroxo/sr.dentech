@@ -44,7 +44,10 @@ const dataCardContent: CardContentProps[] = [
         photo: "/assets/crianca-1.png",
         alt: "foto de uma menina com a boca aberta e as mãos de outra pessoa passando fio dental entre os dentes da menina",
       },
-    ]
+    ],
+    cardInformativo: {
+      text: "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas ao dentista!"
+    }
   }
 ];
 
