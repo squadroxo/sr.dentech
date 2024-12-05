@@ -1,4 +1,5 @@
 import { CardContentProps } from "@/types/dataCardContent";
+import { v4 as uuidv4 } from "uuid";
 
 const dataCardContent: CardContentProps[] = [
   {
@@ -28,6 +29,22 @@ const dataCardContent: CardContentProps[] = [
         }
       ]
     },
+    seeMoreSection: [
+      {
+        id: uuidv4(),
+        title: "Escovação divertida",
+        text: "Muitas vezes, escovar os dentes pode parecer uma tarefa entediante, especialmente para as crianças. No entanto, com algumas estratégias criativas e abordagens inovadoras, é possível tornar esse momento muito mais empolgante e até mesmo prazeroso.",
+        photo: "/assets/crianca-7-sorrindo.png",
+        alt: "foto de um menino sorrindo e utilizando a escova de dentes",
+      },
+      {
+        id: uuidv4(),
+        title: "Por que os dentes de leite são tão importantes?",
+        text: "Muitas vezes, escovar os dentes pode parecer uma tarefa entediante, especialmente para as crianças. No entanto, com algumas estratégias criativas e abordagens inovadoras, é possível tornar esse momento muito mais empolgante e até mesmo prazeroso.",
+        photo: "/assets/crianca-1.png",
+        alt: "foto de uma menina com a boca aberta e as mãos de outra pessoa passando fio dental entre os dentes da menina",
+      },
+    ],
     cardInformativo: {
       text: "Com essas dicas simples, você pode manter seu sorriso saudável e bonito! Não se esqueça de agendar suas consultas ao dentista!"
     }

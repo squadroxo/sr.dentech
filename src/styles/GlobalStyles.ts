@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
   /* Reset CSS */
   *, *::before, *::after {
     margin: 0;
@@ -44,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     line-height: 1;
     min-height: 100vh;
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.white100};
     color: ${({ theme }) => theme.colors.text};
   }
 

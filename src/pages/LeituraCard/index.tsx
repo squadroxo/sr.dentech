@@ -1,5 +1,6 @@
 import * as Styles from './styles';
 import InstructionCard from '../../components/InstructionCard';
+import ContentCard from '../../components/ContentCard';
 import InitialSectionCardContent from '../../components/InitialSectionCardContent';
 import { useParams } from 'react-router';
 import dataCardContent from '../../data/dataCardContent';
@@ -17,7 +18,7 @@ export default function LeituraCard() {
   }
 
   // Desestruturando os dados da página
-  const { initialSection, instructionsSection, cardInformativo } = pageData;
+  const { initialSection, instructionsSection, seeMoreSection, cardInformativo } = pageData;
 
   return (
     <>
@@ -51,9 +52,20 @@ export default function LeituraCard() {
 
       </Styles.Article>
 
-      {/* Linha divisória */}
+      <Styles.Line />
 
-      {/* Article Veja Também (Seção 3) - motion */}
+      <Styles.SeeMore
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <h2>Veja também</h2>
+        <Styles.List>
+          {seeMoreSection.map(item => <li key={item.id}>
+            <ContentCard {...item} />
+          </li>)}
+        </Styles.List>
+      </Styles.SeeMore>
     </>
   );
 }

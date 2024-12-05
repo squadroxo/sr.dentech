@@ -21,3 +21,11 @@ export type dataSectionProps = {
   icon: string,
   carousel: dataCarousel[]
 }
+
+export interface ISectionContentCard {
+  id: string,
+  title: string,
+  text: string,
+  photo: string,
+  alt: string,
+}
